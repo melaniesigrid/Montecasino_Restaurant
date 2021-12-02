@@ -1,0 +1,218 @@
+*,
+*::after,
+*::before {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: ArticulatCF;
+  src: url(fonts/ArticulatCF/ArticulatCF-Medium.otf) format("opentype");
+}
+
+.logo-img {
+  max-width: 250px;
+}
+
+.navbar {
+  background-color: #ffff;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar.sticky {
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu-list {
+  display: inline-flex;
+  margin-right: 70px;
+}
+
+.menu-list {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.menu-list li a {
+  padding: 5px 15px;
+  margin-left: 50px;
+  border: 3px solid transparent;
+}
+
+.menu-list li a:hover {
+  border: 3px solid #4d4d4d;
+  color: #4d4d4d;
+}
+
+.navbar ul li.dropdown li {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+}
+
+.navbar ul li.dropdown ul .space {
+  height: 20px;
+  background-color: transparent;
+}
+
+.navbar ul li.dropdown ul .element {
+  background-color: black;
+}
+
+.navbar ul li.dropdown ul {
+  position: absolute;
+  min-width: 220px;
+  margin-left: 50px;
+  margin-top: 0;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: none;
+}
+
+.navbar ul li.dropdown ul li {
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li.dropdown ul li a {
+  margin-left: 0px;
+}
+
+.navbar ul li.dropdown ul li a:hover {
+  border: 3px solid white;
+  color: white;
+}
+
+.selected {
+  border: 3px solid black !important;
+}
+
+.action-button {
+  color: white;
+  background-color: black;
+}
+
+.action-button:hover {
+  color: white !important;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url("images/compuesta3be.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about {
+  padding: 40px 0;
+}
+
+.about.title {
+  font-size: 30px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon:hover {
+  opacity: 70%;
+}
+
+.menu-btn {
+  margin-right: 20px;
+}
+
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+
+  .icon{
+    display: block;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    max-width: 400px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 20px;
+  }
+}

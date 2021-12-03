@@ -43,13 +43,13 @@ ul {
   padding: 10px;
 }
 
-.navbar.sticky {
+.navbar {
   background-color: white;
   padding: 10px 0;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .content {
+.content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -214,5 +214,24 @@ ul {
 
   .navbar .menu-list li a {
     font-size: 20px;
+  }
+
+  .navbar ul li.dropdown ul{
+    position: static;
+    font-size: 15px;
+    background-color: white;
+  }
+  .navbar ul li.dropdown ul .element {
+    background-color: white;
+    color: black;
+  }
+
+  .navbar ul li.dropdown ul .space {
+    height: 20px;
+    background-color: transparent;
+  }
+  .navbar ul li.dropdown ul li a:hover {
+    color: black;
+    border: 3px solid black;
   }
 }

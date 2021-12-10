@@ -142,7 +142,8 @@ ul {
 }
 
 .action-button:hover {
-  color: #efebda !important;
+  color: #323337;
+  background-color: #efebda;
 }
 
 .icon {
@@ -215,16 +216,60 @@ ul {
 .grid-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
 
 .color-block {
-  background-color: #323337;
-  height: 500px;
+  font-family: ArticulatCF, cursive;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
+}
+
+#restaurant-color-block {
+  background-color: #ff761e;
 }
 
 .picture-block {
-  background-color: #efebda;
-  height: 500px;
+  background-image: url(images/fotografia/restaurant-square.jpg);
+  background-size: cover;
+}
+
+.invitation-container {
+  max-width: 20vw;
+  padding: 20px;
+}
+
+.invitation {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.montecasino:hover {
+  cursor: pointer;
+  color: #323337;
+}
+
+.small-separator {
+  max-width: 120px;
+  border-top: 3px solid white;
+  margin-bottom: 30px;
+}
+
+.paragraph-container {
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.logo-restaurante {
+  max-width: 30vw;
+  margin-right: 50px;
+}
+
+#jardines-color-block {
+  background-color: #3d7a53;
 }
 
 .footer-bar {
@@ -261,6 +306,8 @@ ul {
   background-color: #323337;
   color: #efebda;
 }
+
+
 
 @media (max-width: 1300px) {
   .icon{

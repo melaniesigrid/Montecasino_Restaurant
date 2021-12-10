@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,11 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-  
-   <!-- Font Awesome icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome icons -->
   <script src="https://kit.fontawesome.com/11bb635b00.js" crossorigin="anonymous"></script>
 
   <!-- Favicon -->
@@ -26,7 +29,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -41,48 +44,49 @@
 <body>
   <nav class="navbar">
     <div class="content">
-    <div class="logo"><a href="#"><img src="images/grupo-montecasino-light-black.png" alt="Grupo Montecasino" class="logo-img" id="logo-image"></a></div>
-    <ul class="menu-list">
-      <div class="icon cancel-btn close-btn">
-        <i class="fas fa-times"></i>
+      <div class="logo"><a href="#"><img src="images/grupo-montecasino-light-black.png" alt="Grupo Montecasino"
+            class="logo-img" id="logo-image"></a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li class="dropdown">
+          <a href="#" class="selected">Inicio</a>
+          <ul>
+            <li class="space"></li>
+            <li class="element"><a href="#">Nuestra Historia</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Restaurante</a>
+          <ul>
+            <li class="space"></li>
+            <li class="element"><a href="#">Menú</a></li>
+            <li class="element"><a href="#">Bebidas</a></li>
+            <li class="element"><a href="#">Reservaciones</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Eventos</a>
+          <ul>
+            <li class="space"></li>
+            <li class="element"><a href="#">Catering & Degustaciones</a></li>
+            <li class="element"><a href="#">Reservaciones</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Hostal</a>
+          <ul>
+            <li class="space"></li>
+            <li class="element"><a href="#">Muy pronto...</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#" class="action-button">Encuéntranos</a></li>
+      </ul>
+      <div class="div icon menu-btn">
+        <i class="fas fa-bars hamburger"></i>
       </div>
-      <li class="dropdown">
-        <a href="#" class="selected">Inicio</a>
-        <ul>
-          <li class="space"></li>
-          <li class="element"><a href="#">Nuestra Historia</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#">Restaurante</a>
-        <ul>
-          <li class="space"></li>
-          <li class="element"><a href="#">Menú</a></li>
-          <li class="element"><a href="#">Bebidas</a></li>
-          <li class="element"><a href="#">Reservaciones</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#">Eventos</a>
-        <ul>
-          <li class="space"></li>
-          <li class="element"><a href="#">Catering & Degustaciones</a></li>
-          <li class="element"><a href="#">Reservaciones</a></li>       
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#">Hostal</a>
-        <ul>
-          <li class="space"></li>
-          <li class="element"><a href="#">Muy pronto...</a></li>   
-        </ul>
-      </li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#" class="action-button">Encuéntranos</a></li>
-    </ul>
-    <div class="div icon menu-btn">
-      <i class="fas fa-bars hamburger"></i>
-    </div>
     </div>
   </nav>
   <main>
@@ -92,16 +96,34 @@
         <div class="intro-btn"><a href="#presentation">Explorar</a></div>
       </div>
     </section>
-    <section class="presentation grid-area" id="presentation">
-      <div class="color-block"></div>
-      <div class="picture-block"></div>
+    <section class="presentation" id="presentation">
+      <div class="grid-area">
+        <div class="color-block" id="restaurant-color-block">
+          <div class="invitation-container">
+            <h2 class="invitation">Acompáñanos a inaugurar esta nueva etapa</h2>
+          </div>
+          <div class="paragraph-container">
+            <hr class="small-separator">
+            <p class="share">Comparte, respira y relájate en <strong class="montecasino">montecasino</strong>.</p>
+          </div>
+          <a href="#"><img src="images/Restaurante_Logo_BlancoSinFondo.png" class="logo-restaurante"></a>
+        </div>
+        <div class="picture-block"></div>
+      </div>
+      <div class="grid-area">
+        <div class="picture-block">
+        </div>
+        <div class="color-block" id="jardines-color-block">
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer-bar">
     <div class="footer-logo"><img class="footer-image" src="images/grupo-montecasino-cream.png"></div>
     <div class="footer-text">
-      <a  href="tel:+502-4614-9855"class="phone-number"><i class="fas fa-phone"></i> +(502) 4614-9855</a>
-      <a href="#"><i class="fas fa-map-marker"></i> Km. 34 Carretera de Antigua a Ciudad Guatemala, Santa Lucía Milpas Altas</a>
+      <a href="tel:+502-4614-9855" class="phone-number"><i class="fas fa-phone"></i> +(502) 4614-9855</a>
+      <a href="#"><i class="fas fa-map-marker"></i> Km. 34 Carretera de Antigua a Ciudad Guatemala, Santa Lucía Milpas
+        Altas</a>
       <div class="social-links">
         <a href="#"><i class="fab fa-facebook-square"></i></a>
         <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -112,4 +134,5 @@
   <!--JavaScript file-->
   <script src="main.js"></script>
 </body>
+
 </html>

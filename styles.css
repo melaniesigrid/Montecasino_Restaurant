@@ -49,7 +49,7 @@ ul {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #efebda;
   padding: 10px 0;
 }
 
@@ -160,7 +160,7 @@ ul {
   margin-right: 20px;
 }
 
-.cancel-btn{
+.cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
@@ -174,7 +174,8 @@ ul {
 }
 
 .intro {
-  background-image: url(images/fotografia/plate.jpg);
+  background-image: url(images/compuesta3be.jpg);
+  background-position: center;
   height: 100vh;
   background-size: cover;
   display: flex;
@@ -184,33 +185,46 @@ ul {
   align-items: center;
 }
 
+.intro-banner {
+  background-color: #323337;
+  width: 100vw;
+  height: 25vh;
+  color: #efebda;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .relax {
-  font-family: Raleway, cursive;
+  font-family: ArticulatCF, sans-serif;
   font-weight: 400;
   font-size: 60px;
   letter-spacing: 5.7px;
   text-transform: uppercase;
+  margin-top: 50px;
 }
 
 .intro-btn {
   margin: 45px auto;
-  height: 70px;
+  height: 100px;
   width: 250px;
-  border: 3px solid black;
+  border: 3px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: Raleway, cursive;
+  font-family: ArticulatCF, sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
 }
 
 .intro-btn:hover {
   cursor: pointer;
-  background-color: #efebda;
-  border-color: #efebda;
+  color: black;
+  background-color: white;
+  border-color: white;
 }
 
 .grid-area {
@@ -246,15 +260,20 @@ ul {
   font-weight: bold;
 }
 
-.montecasino:hover {
+.montecasino-small:hover {
   cursor: pointer;
   color: #323337;
 }
 
 .small-separator {
-  max-width: 120px;
-  border-top: 3px solid white;
+  max-width: 200px;
+  border-top: 3px solid;
   margin-bottom: 30px;
+}
+
+#white-separator {
+  border-color: white;
+  background-color: white;
 }
 
 .paragraph-container {
@@ -268,9 +287,46 @@ ul {
   margin-right: 50px;
 }
 
-#jardines-color-block {
-  background-color: #3d7a53;
+#respira {
+  background-image: url(images/fotografia/hojas.jpg);
+  background-size: cover;
 }
+
+#jardines-color-block {
+  display: grid;
+  background-color: #3d7a53;
+  font-size: 90px !important;
+}
+
+.text-container {
+  background-color: #3d7a53;
+  font-family: ArticulatCF, cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title-container {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+#green-breathe {
+  color: #efebda;
+}
+
+#cream-separator {
+  border-color: #efebda;
+  background-color: #efebda;
+  margin-top: 40px;
+}
+
+.montecasino-title {
+  max-width: 800px;
+}
+
+/* .smaller-grid {
+  background-color: #3e5b43;
+} */
 
 .footer-bar {
   display: grid;
@@ -287,7 +343,7 @@ ul {
 }
 
 .footer-image {
-  width: 200px;
+  width: 300px;
 }
 
 .footer-text {
@@ -310,7 +366,7 @@ ul {
 
 
 @media (max-width: 1300px) {
-  .icon{
+  .icon {
     display: block;
   }
 
@@ -344,11 +400,12 @@ ul {
     font-size: 20px;
   }
 
-  .navbar ul li.dropdown ul{
+  .navbar ul li.dropdown ul {
     position: static;
     font-size: 15px;
     background-color: #efebda;
   }
+
   .navbar ul li.dropdown ul .element {
     background-color: #efebda;
     color: #323337;

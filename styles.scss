@@ -45,7 +45,7 @@ ul {
 }
 
 .logo-img {
-  margin-left: 40px;
+  margin-left: 50px;
   max-width: 300px;
 }
 
@@ -54,15 +54,10 @@ ul {
 }
 
 .navbar {
-  background-color: --var(off-white);
+  background-color: transparent;
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 10px;
-}
-
-.navbar {
-  background-color: #efebda;
   padding: 10px 0;
 }
 
@@ -93,6 +88,7 @@ ul {
 .menu-list li a:hover {
   border: 3px solid #4d4d4d;
   color: #4d4d4d;
+  background-color: $off-white;
 }
 
 .navbar ul li.dropdown li {

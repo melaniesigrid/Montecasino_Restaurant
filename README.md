@@ -1,7 +1,7 @@
-# Corporación Montecasino Webpage (In Progress...)
+# Grupo Montecasino Webpage (In Progress...)
 
 > A webpage for Corporación Montecasino, an event venue, restaurant and hotel.
-My first project as a freelance web developer.
+My first project as a freelance web designer and developer.
 
 ![screenshot](./preliminary-screenshot.png)
 

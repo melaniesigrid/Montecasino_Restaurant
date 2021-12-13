@@ -1,44 +1,21 @@
-# Corporación Montecasino Webpage
+# Corporación Montecasino Webpage (In Progress...)
 
 > A webpage for Corporación Montecasino, an event venue, restaurant and hotel.
 My first project as a freelance web developer.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./preliminary-screenshot.png)
 
 
 ## Built With
 
-- HTML
+- HTML5
 - CSS
+- SASS
 - JavaScript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+[Live Demo Link](https://melaniesigrid.github.io/Montecasino_Restaurant/)
 ## Authors
 
 👤 **Melanie Sigrid**
@@ -59,9 +36,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to everyone at Montecasino and the design studio that worked with us.
 
 ## 📝 License
 

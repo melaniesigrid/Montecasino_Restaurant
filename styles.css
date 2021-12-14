@@ -44,7 +44,7 @@ ul {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: rgba(239, 235, 218, 0.8);
   position: fixed;
   z-index: 2;
   width: 100%;

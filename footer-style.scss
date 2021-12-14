@@ -1,0 +1,29 @@
+.footer-bar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #323337;
+  padding: 30px;
+  line-height: 45px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image {
+  width: 300px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: ArticulatCF, sans-serif;
+  color: #efebda;
+}
+
+.social-links {
+  font-size: 2rem;
+}

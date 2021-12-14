@@ -46,7 +46,7 @@ ul {
 .navbar {
   background-color: rgba(239, 235, 218, 0.8);
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   padding: 10px 0;
 }
@@ -265,7 +265,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
   font-family: ArticulatCF, sans-serif;
   letter-spacing: 3px;
   font-weight: bold;
@@ -288,17 +288,11 @@ ul {
 
 .color-block {
   font-family: ArticulatCF, sans-serif;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 90px;
 }
 
 #restaurant-color-block {
   background-color: #ff761e;
+  padding: 90px;
 }
 
 .picture-block {
@@ -352,15 +346,32 @@ ul {
 #jardines-color-block {
   display: -ms-grid;
   display: grid;
-  background-color: #3d7a53;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  background-color: #7f9f45;
   font-size: 90px !important;
 }
 
 .text-container {
-  background-color: #3d7a53;
+  background-color: #7f9f45;
   font-family: ArticulatCF, sans-serif;
   font-size: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   font-weight: bold;
+}
+
+.small-text-container {
+  background-color: #3d7a53 !important;
+  width: 100%;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
 }
 
 .title-container {
@@ -370,21 +381,60 @@ ul {
 
 #green-breathe {
   color: #efebda;
+  margin-left: 70px;
 }
 
 #cream-separator {
+  margin-left: 70px;
   border-color: #efebda;
   background-color: #efebda;
   margin-top: 40px;
+}
+
+.cabin {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 290px;
+}
+
+.another-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-separator {
+  width: 5px;
+  height: 150px;
+  background-color: #efebda;
+  margin-right: 25px;
+}
+
+.mini-div {
+  color: #efebda;
+  width: 300px;
+}
+
+.tiny-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cabin-text {
+  font-size: 20px;
+  text-align: justify;
 }
 
 .montecasino-title {
   max-width: 800px;
 }
 
-/* .smaller-grid {
-  background-color: #3e5b43;
-} */
 .footer-bar {
   display: -ms-grid;
   display: grid;
@@ -435,7 +485,7 @@ ul {
   color: #efebda;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .icon {
     display: block;
   }

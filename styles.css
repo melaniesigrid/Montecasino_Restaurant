@@ -222,7 +222,7 @@ ul {
 
 .intro-banner {
   margin-top: 70px;
-  background-color: #323337;
+  background-color: rgba(50, 51, 55, 0.8);
   width: 100vw;
   color: #efebda;
   display: -webkit-box;

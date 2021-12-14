@@ -153,6 +153,7 @@ ul {
 
 .navbar ul li.dropdown ul li a:hover {
   border: 3px solid #efebda;
+  background-color: #323337;
   color: #efebda;
 }
 
@@ -223,7 +224,6 @@ ul {
   margin-top: 70px;
   background-color: #323337;
   width: 100vw;
-  height: 25vh;
   color: #efebda;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +251,7 @@ ul {
 
 .intro-btn {
   margin: 45px auto;
-  height: 100px;
+  height: 60px;
   width: 250px;
   border: 3px solid #efebda;
   display: -webkit-box;

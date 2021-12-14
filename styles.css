@@ -71,8 +71,9 @@ ul {
 }
 
 .menu-list {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'ArticulatCF', sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -266,8 +267,8 @@ ul {
   text-transform: uppercase;
   font-size: 13px;
   font-family: ArticulatCF, sans-serif;
-  font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
 .intro-btn:hover {
@@ -286,7 +287,7 @@ ul {
 }
 
 .color-block {
-  font-family: ArticulatCF, cursive;
+  font-family: ArticulatCF, sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -357,7 +358,7 @@ ul {
 
 .text-container {
   background-color: #3d7a53;
-  font-family: ArticulatCF, cursive;
+  font-family: ArticulatCF, sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -421,7 +422,7 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-family: ArticulatCF, cursive;
+  font-family: ArticulatCF, sans-serif;
   color: #efebda;
 }
 

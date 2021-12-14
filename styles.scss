@@ -67,12 +67,9 @@ ul {
   justify-content: space-between;
 }
 
-.navbar .menu-list {
+.menu-list {
   display: inline-flex;
   margin-right: 70px;
-}
-
-.menu-list {
   font-family: 'ArticulatCF', sans-serif;
   letter-spacing: 3px;
   font-weight: bold;
@@ -97,19 +94,6 @@ ul {
   justify-content: center;
 }
 
-.navbar ul li.dropdown:hover ul {
-  display: block;
-}
-
-.navbar ul li.dropdown ul .space {
-  height: 20px;
-  background-color: transparent;
-}
-
-.navbar ul li.dropdown ul .element {
-  background-color: #323337;
-}
-
 .navbar ul li.dropdown ul {
   position: absolute;
   min-width: 220px;
@@ -121,6 +105,19 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
   display: none;
+}
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+}
+
+.navbar ul li.dropdown ul .space {
+  height: 20px;
+  background-color: transparent;
+}
+
+.navbar ul li.dropdown ul .element {
+  background-color: #323337;
 }
 
 .navbar ul li.dropdown ul li {
@@ -144,7 +141,7 @@ ul {
 }
 
 .selected {
-  border: 3px solid #000000 !important;
+  border: 3px solid black !important;
 }
 
 .action-button {
@@ -179,7 +176,7 @@ ul {
 
 .scroll-active {
   background-color: #efebda;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   height: 100px;
   padding-top: 0;
 }
@@ -246,6 +243,7 @@ ul {
 
 .color-block {
   font-family: ArticulatCF, sans-serif;
+  width: 50vw;
 }
 
 #restaurant-color-block {
@@ -254,6 +252,7 @@ ul {
 }
 
 .picture-block {
+  width: 50vw;
   background-image: url(images/fotografia/restaurant-square.jpg);
   background-size: cover;
 }
@@ -292,8 +291,9 @@ ul {
 }
 
 .logo-restaurante {
-  max-width: 30vw;
+  max-width: 500px;
   margin-right: 50px;
+  justify-self: center;
 }
 
 #respira {
@@ -318,7 +318,7 @@ ul {
 }
 
 .small-text-container {
-  background-color: $light-blue-green!important;
+  background-color: $light-blue-green !important;
   width: 100%;
   z-index: 2;
   display: grid;
@@ -379,35 +379,6 @@ ul {
   max-width: 800px;
 }
 
-.footer-bar {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  background-color: #323337;
-  padding: 30px;
-  line-height: 45px;
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-image {
-  width: 300px;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-family: ArticulatCF, sans-serif;
-  color: #efebda;
-}
-
-.social-links {
-  font-size: 2rem;
-}
 
 .menu-intro {
   background-color: #323337;

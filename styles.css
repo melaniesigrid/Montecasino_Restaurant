@@ -63,14 +63,11 @@ ul {
           justify-content: space-between;
 }
 
-.navbar .menu-list {
+.menu-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 70px;
-}
-
-.menu-list {
   font-family: 'ArticulatCF', sans-serif;
   letter-spacing: 3px;
   font-weight: bold;
@@ -99,19 +96,6 @@ ul {
           justify-content: center;
 }
 
-.navbar ul li.dropdown:hover ul {
-  display: block;
-}
-
-.navbar ul li.dropdown ul .space {
-  height: 20px;
-  background-color: transparent;
-}
-
-.navbar ul li.dropdown ul .element {
-  background-color: #323337;
-}
-
 .navbar ul li.dropdown ul {
   position: absolute;
   min-width: 220px;
@@ -130,6 +114,19 @@ ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   display: none;
+}
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+}
+
+.navbar ul li.dropdown ul .space {
+  height: 20px;
+  background-color: transparent;
+}
+
+.navbar ul li.dropdown ul .element {
+  background-color: #323337;
 }
 
 .navbar ul li.dropdown ul li {
@@ -334,8 +331,10 @@ ul {
 }
 
 .logo-restaurante {
-  max-width: 30vw;
+  max-width: 500px;
   margin-right: 50px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 #respira {

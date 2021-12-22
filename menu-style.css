@@ -71,6 +71,7 @@ h3 span {
 
 .menu-class-image {
   max-width: 100px;
+  margin: 30px;
 }
 
 .menu-content {
@@ -126,10 +127,6 @@ h3 span {
 
 .plate-description {
   margin: 10px 0;
-}
-
-.menu-class-image {
-  margin: 30px;
 }
 
 .new-style {

@@ -62,7 +62,8 @@ h3 span {
 }
 
 .menu-class-image {
-  max-width: 100px;;
+  max-width: 100px;
+  margin: 30px;
 }
 
 .menu-content {
@@ -102,10 +103,6 @@ h3 span {
   margin: 10px 0;
 }
 
-.menu-class-image {
-  margin: 30px;
-}
-
 .new-style {
   font-family: 'Oswald', sans-serif !important;
 }
@@ -118,7 +115,7 @@ h3 span {
 
 @media (max-width: 1900px) {
   #desayunos-menu-content {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
@@ -130,7 +127,7 @@ h3 span {
 
 @media (max-width: 1100px) {
   #desayunos-menu-content {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
@@ -144,6 +141,7 @@ h3 span {
   .plate {
     font-size: 18px;
   }
+
   .menu-item {
     max-width: 300px;
   }

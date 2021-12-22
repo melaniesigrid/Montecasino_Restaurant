@@ -29,14 +29,14 @@
 }
 
 @media (max-width: 1000px) {
-    .footer-bar {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-    }
+  .footer-bar {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-    .footer-text {
-      align-items: center;
-    }
+  .footer-text {
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -44,7 +44,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
   }
-  
+
   .footer-text {
     align-items: center;
   }

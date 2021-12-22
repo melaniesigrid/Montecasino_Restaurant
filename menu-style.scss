@@ -1,0 +1,148 @@
+$light-orange: #ff9200;
+$dark-orange: #ff761e;
+$light-brown: #6f2f09;
+$dark-brown: #592f09;
+$light-orange-brown: #b44c24;
+$dark-orange-brown: #8c2f09;
+$light-green: #7f9f45;
+$dark-green: #63722b;
+$light-blue-green: #3d7a53;
+$dark-blue-green: #3e5b43;
+$off-white: #efebda;
+$off-black: #323337;
+
+body {
+  font-family: ArticulatCF, sans-serif;
+}
+
+.menu-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-title {
+  font-size: 70px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.restaurant-logo {
+  max-width: 40%;
+  margin: auto;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  background-color: $off-black;
+  color: $off-white;
+}
+
+.desayunos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-menu-title {
+  width: 85%;
+  font-size: 40px;
+  color: $off-white;
+  text-align: center;
+  border-bottom: 4px solid $off-white;
+  line-height: 0.1em;
+  margin: 70px auto 70px;
+}
+
+h3 span {
+  background: $off-black;
+  padding: 0 20px;
+}
+
+.menu-class-image {
+  max-width: 100px;
+  margin: 30px;
+}
+
+.menu-content {
+  display: grid;
+  grid-column-gap: 20px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  max-width: 500px;
+}
+
+.food-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#desayunos-menu-content {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#ensaladas-menu-content {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.plate {
+  font-size: 28px;
+}
+
+.plate-description {
+  margin: 10px 0;
+}
+
+.new-style {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+@media (max-width: 2200px) {
+  .menu-content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1900px) {
+  #desayunos-menu-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #ensaladas-menu-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  #desayunos-menu-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #ensaladas-menu-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .plate {
+    font-size: 18px;
+  }
+
+  .menu-item {
+    max-width: 300px;
+  }
+}

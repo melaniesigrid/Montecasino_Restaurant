@@ -146,7 +146,7 @@ ul {
 }
 
 .navbar ul li.dropdown ul li a {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .navbar ul li.dropdown ul li a:hover {
@@ -156,7 +156,7 @@ ul {
 }
 
 .selected {
-  border: 3px solid #000000 !important;
+  border: 3px solid black !important;
 }
 
 .action-button {
@@ -191,8 +191,8 @@ ul {
 
 .scroll-active {
   background-color: #efebda;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   height: 100px;
   padding-top: 0;
 }
@@ -285,6 +285,7 @@ ul {
 
 .color-block {
   font-family: ArticulatCF, sans-serif;
+  width: 50vw;
 }
 
 #restaurant-color-block {
@@ -293,6 +294,7 @@ ul {
 }
 
 .picture-block {
+  width: 50vw;
   background-image: url(images/fotografia/restaurant-square.jpg);
   background-size: cover;
 }
@@ -432,51 +434,6 @@ ul {
 
 .montecasino-title {
   max-width: 800px;
-}
-
-.footer-bar {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
-  background-color: #323337;
-  padding: 30px;
-  line-height: 45px;
-}
-
-.footer-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-image {
-  width: 300px;
-}
-
-.footer-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-family: ArticulatCF, sans-serif;
-  color: #efebda;
-}
-
-.social-links {
-  font-size: 2rem;
 }
 
 .menu-intro {

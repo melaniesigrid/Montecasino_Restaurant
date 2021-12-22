@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS Stylesheets-->
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="menu-style.css">
   <link rel="stylesheet" type="text/css" href="footer-style.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-  
-   <!-- Font Awesome icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome icons -->
   <script src="https://kit.fontawesome.com/11bb635b00.js" crossorigin="anonymous"></script>
 
   <!-- Favicon -->
@@ -26,7 +34,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -36,6 +44,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>Menú</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -43,9 +52,11 @@
         <div class="logo"><a href="#"><img src="images/grupo-montecasino-light-black.png" alt="Grupo Montecasino"
               class="logo-img" id="logo-image"></a></div>
         <ul class="menu-list">
-          <div class="icon cancel-btn close-btn">
-            <i class="fas fa-times"></i>
-          </div>
+          <li>
+            <div class="icon cancel-btn close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+          </li>
           <li class="dropdown">
             <a href="#" class="selected">Inicio</a>
             <ul>
@@ -88,20 +99,170 @@
   <main>
     <section class="menu-intro">
       <h1 class="menu-title">Menú</h1>
-      <h3 class="relax">Relájate, tómate un respiro.</h3>
+      <img class="restaurant-logo" src="images/restaurante-logo-cream.png" alt="Logo restaurante">
       <div class="menu-nav">
-        
+
       </div>
     </section>
-    <section class="platos">
+
+    <section class="menu-section">
+      <div class="desayunos food-type">
+        <h3 class="section-menu-title"><span>Desayunos</span></h3>
+
+        <div class="menu-content" id="desayunos-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Huevos al Gusto ------------------- </span><span>40</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>2 huevos al gusto, acompañados de frijoles volteados, platanos fritos, queso panela, media crema y
+                salsa ranchera.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Huevos Benedictinos --------------- </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>2 huevos montados sobre panes aromatizados, prosciutto, salsa holandesa. *Acompañados de frijol
+                volteado, platanos fritos, queso panela.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Huevos Poché ---------------------- </span><span>40</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>2 huevos poché, montados sobre pan aromatizado y jamón de pavo. *Acompañado de frijoles volteados,
+                queso panela, plátanos fritos, salsa ranchera.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Omelette Chapín ------------------- </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Omelette relleno de frijoles, queso panela, aguacate. *Acompañado de platanos fritos, jamòn de pavo,
+                fruta.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Omelette Al Gusto ----------------- </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella,
+                tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Panqueques ------------------------- </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Panqueques de fresa, syrup de chocolate, azúcar glass. *Vaso jugo de naranja.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ensaladas food-type">
+        <h3 class="section-menu-title"><span>Ensaladas y Antipasto</span></h3>
+
+        <div class="menu-content" id="ensaladas-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Aguacate Extra ---------------------- </span><span>10</span></h4>
+            </div>
+            <div class="plate-description">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Bruschetta --------------------------- </span><span>35</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Rodajas de pan, tomate, albahaca, aceitunas, aceite de oliva.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Carpaccio de Lomito --------------- </span><span>70</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Lomito, arúgula, alcaparras baby, puerro, queso parmesano.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Ensalada Caprese ------------------ </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella fresca, tomate, albahaca, acetto balsamico.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Ensalada de Arugula e Prosciutto </span><span>65</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella,
+                tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Funghi Al Aglio ---------------------- </span><span>45</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Ragú de hongos, champiñones, portobello, crimini.</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Melón y Prosciutto ----------------- </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Prosciutto crudo, melón, arúgula, reducción de balsámico..</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Pulpo Al Ajo ---------------------- </span><span>55</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Pulpos, camarones, cebolla morada, ajo.</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="plate">
+              <h4><span class="plate-title">Vitello Tonnato ---------------------- </span><span>50</span></h4>
+            </div>
+            <div class="plate-description">
+              <p>Lascas de lomo, arúgula, en salsa de atún.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="bebidas">
-    </section>
-    <section class="aperitivos-postres">
-    </section>>
   </main>
   <footer class="footer-bar">
-    <div class="footer-logo"><img class="footer-image" src="images/grupo-montecasino-cream.png"></div>
+    <div class="footer-logo"><img class="footer-image" src="images/grupo-montecasino-cream.png" alt="Logo Montecasino">
+    </div>
     <div class="footer-text">
       <a href="tel:+502-4614-9855" class="phone-number"><i class="fas fa-phone"></i> +(502) 4614-9855</a>
       <a href="#"><i class="fas fa-map-marker"></i> Km. 34 Carretera de Antigua a Ciudad Guatemala, Santa Lucía Milpas
@@ -113,5 +274,8 @@
       </div>
     </div>
   </footer>
+  <!--JavaScript file-->
+  <script src="main.js"></script>
 </body>
+
 </html>

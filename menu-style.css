@@ -115,7 +115,7 @@ body {
           justify-content: center;
 }
 
-#desayunos-menu-content {
+.large-menu-content {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;

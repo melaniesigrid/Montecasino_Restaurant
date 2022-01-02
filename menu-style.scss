@@ -46,19 +46,20 @@ body {
   align-items: center;
 }
 
-.section-menu-title {
-  width: 85%;
-  font-size: 40px;
-  color: $off-white;
-  text-align: center;
-  border-bottom: 4px solid $off-white;
-  line-height: 0.1em;
-  margin: 70px auto 70px;
+.title-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
-h3 span {
-  background: $off-black;
-  padding: 0 20px;
+.expandable-separator {
+  border: 1px solid $off-white;
+  width: 100%;
+  flex-shrink: 100000;
 }
 
 .menu-class-image {
@@ -68,7 +69,7 @@ h3 span {
 
 .menu-content {
   display: grid;
-  grid-column-gap: 20px;
+  grid-column-gap: 30px;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -95,16 +96,37 @@ h3 span {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.plate-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 450px;
+}
+
+.price-separator {
+  border-top: 3px dashed $off-white;
+  width: 100%;
+  flex-shrink: 100000;
+  align-self: flex-end;
+  margin-bottom: 11px;
+}
+
 .plate {
   font-size: 28px;
 }
 
 .plate-description {
   margin: 10px 0;
+  width: 450px;
 }
 
 .new-style {
   font-family: 'Oswald', sans-serif !important;
+}
+
+.additional {
+  font-size: 25px;
 }
 
 @media (max-width: 2200px) {

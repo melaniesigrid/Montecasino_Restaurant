@@ -1,7 +1,7 @@
-# Grupo Montecasino Webpage (In Progress...)
+# Grupo Montecasino Webpage (Discontinued)
 
 > A webpage for Corporación Montecasino, an event venue, restaurant and hotel.
-My first project as a freelance web designer and developer.
+My first project as a freelance web designer and developer. I have discontinued this project to focus on my learning curriculum.
 
 ![screenshot](./preliminary-screenshot.png)
 

@@ -22,7 +22,7 @@ My first project as a freelance web designer and developer. I have discontinued 
 
 - GitHub: [@melaniesigrid](https://github.com/melaniesigrid)
 - Twitter: [@SiriMoon11](https://twitter.com/SiriMoon11)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melanie-arellano-92aaa9194/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melaniesigrid/)
 
 ## 🤝 Contributing
 

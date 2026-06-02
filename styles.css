@@ -1,9 +1,55 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Skip-to-content link — visible on focus only */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+}
+.skip-link:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 12px 24px;
+  background-color: #323337;
+  color: #efebda;
+  font-family: ArticulatCF, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: 3px solid #efebda;
+}
+
+/* Focus ring — visible for keyboard navigation */
+:focus-visible {
+  outline: 3px solid #323337;
+  outline-offset: 3px;
+}
+.action-button:focus-visible,
+.intro-btn a:focus-visible,
+.menu-section :focus-visible,
+.menu-category-nav :focus-visible,
+.footer-bar :focus-visible,
+.page-hero :focus-visible {
+  outline-color: #efebda;
+}
+
 *,
 *::after,
 *::before {
-  scroll-behavior: smooth;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, opacity 0.25s ease, -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12,6 +58,10 @@
 
 body {
   margin: 0;
+}
+
+img {
+  height: auto;
 }
 
 a,
@@ -36,6 +86,7 @@ ul {
 .logo-img {
   margin-left: 50px;
   max-width: 300px;
+  height: auto;
 }
 
 .logo-scroll {
@@ -113,11 +164,15 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
 }
 
 .navbar ul li.dropdown:hover ul {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .navbar ul li.dropdown ul .space {
@@ -173,6 +228,13 @@ ul {
   font-size: 20px;
   cursor: pointer;
   display: none;
+  /* Reset for <button> elements */
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  line-height: 1;
+  font-family: inherit;
 }
 
 .icon:hover {
@@ -300,7 +362,7 @@ ul {
 }
 
 .invitation-container {
-  max-width: 20vw;
+  max-width: 38vw;
   padding: 20px;
 }
 
@@ -350,7 +412,6 @@ ul {
   -ms-grid-rows: 2fr 1fr;
       grid-template-rows: 2fr 1fr;
   background-color: #7f9f45;
-  font-size: 90px !important;
 }
 
 .text-container {
@@ -441,7 +502,23 @@ ul {
   color: #efebda;
 }
 
-@media (max-width: 1500px) {
+/* Compact nav — reduce spacing before hamburger kicks in */
+@media (max-width: 1380px) {
+  .logo-img {
+    margin-left: 30px;
+    max-width: 200px;
+  }
+  .menu-list {
+    margin-right: 30px;
+  }
+  .menu-list li a {
+    margin-left: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1024px) {
   .icon {
     display: block;
   }
@@ -475,6 +552,9 @@ ul {
     position: static;
     font-size: 15px;
     background-color: #efebda;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
   }
   .navbar ul li.dropdown ul .element {
     background-color: #efebda;
@@ -493,4 +573,42 @@ ul {
     border: 3px solid #323337;
   }
 }
+
+/* ── Animations & Scroll Reveal ── */
+
+@keyframes mc-fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes mc-slideup {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+body { animation: mc-fadein 0.4s ease both; }
+
+.relax     { animation: mc-slideup 0.75s ease 0.1s both; }
+.intro-btn { animation: mc-slideup 0.75s ease 0.3s both; }
+
+/* Scroll reveal — JS adds data-reveal, then .reveal-visible when in view */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: none !important;
+}
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.65s ease var(--reveal-delay, 0ms),
+              transform 0.65s ease var(--reveal-delay, 0ms) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body, .relax, .intro-btn { animation: none; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .reveal-visible { transition: none !important; }
+}
+
 /*# sourceMappingURL=styles.css.map */

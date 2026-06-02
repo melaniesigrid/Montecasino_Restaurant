@@ -1,0 +1,212 @@
+.historia-hero {
+  height: 70vh;
+  background-image: url('images/fotografia/historia-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historia-hero-overlay {
+  background-color: rgba(50, 51, 55, 0.75);
+  padding: 60px 80px;
+  text-align: center;
+  color: #efebda;
+  font-family: ArticulatCF, sans-serif;
+}
+
+.historia-title {
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.historia-separator {
+  border: none;
+  border-top: 3px solid #efebda;
+  max-width: 120px;
+  margin: 24px auto;
+}
+
+.historia-subtitle {
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* ── Body blocks ── */
+
+.historia-body {
+  background-color: #efebda;
+  font-family: ArticulatCF, sans-serif;
+}
+
+.historia-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+
+.historia-block-text-left .historia-text {
+  order: 1;
+}
+.historia-block-text-left .historia-img {
+  order: 2;
+}
+.historia-block-text-right .historia-text {
+  order: 2;
+}
+.historia-block-text-right .historia-img {
+  order: 1;
+}
+
+.historia-text {
+  padding: 70px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #323337;
+}
+
+.historia-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.block-separator {
+  border: none;
+  border-top: 3px solid #323337;
+  max-width: 80px;
+  margin: 0 0 24px;
+}
+
+.historia-text p {
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.historia-img {
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+.historia-cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  border: 3px solid #323337;
+  color: #323337;
+  font-family: ArticulatCF, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.historia-cta:hover {
+  background-color: #323337;
+  color: #efebda;
+}
+
+/* ── Values ── */
+
+.historia-values {
+  background-color: #323337;
+  color: #efebda;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.values-title {
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-icon {
+  width: 80px;
+  margin-bottom: 24px;
+  opacity: 0.85;
+}
+
+.value-icon-fa {
+  font-size: 56px;
+  color: #efebda;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.value-item h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.value-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 900px) {
+  .historia-block {
+    grid-template-columns: 1fr;
+  }
+
+  .historia-block-text-left .historia-text,
+  .historia-block-text-right .historia-text {
+    order: 2;
+  }
+
+  .historia-block-text-left .historia-img,
+  .historia-block-text-right .historia-img {
+    order: 1;
+    min-height: 300px;
+  }
+
+  .historia-text {
+    padding: 50px 32px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .historia-title {
+    font-size: 38px;
+  }
+
+  .historia-hero-overlay {
+    padding: 40px 30px;
+  }
+}

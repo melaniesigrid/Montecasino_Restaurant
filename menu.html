@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="font" type="font/otf" href="fonts/ArticulatCF/ArticulatCF-Medium.otf" crossorigin>
   <!-- CSS Stylesheets-->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="menu-style.css">
@@ -16,8 +17,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
 
@@ -42,98 +41,166 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <title>Menú</title>
+  <meta name="description" content="Menú Restaurante Montecasino. Desayunos, ensaladas, pastas, pizzas, carnes, postres y bebidas. Cocina italiana y guatemalteca, Milpas Altas.">
+  <title>Menú – Restaurante Montecasino, Santa Lucía Milpas Altas</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://montecasino.gt/menu.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grupo Montecasino">
+  <meta property="og:locale" content="es_GT">
+  <meta property="og:title" content="Menú – Restaurante Montecasino, Santa Lucía Milpas Altas">
+  <meta property="og:description" content="Menú Restaurante Montecasino. Desayunos, ensaladas, pastas, pizzas, carnes, postres y bebidas. Cocina italiana y guatemalteca, Milpas Altas.">
+  <meta property="og:url" content="https://montecasino.gt/menu.html">
+  <meta property="og:image" content="https://montecasino.gt/images/fotografia/restaurant.jpg">
+  <meta property="og:image:alt" content="Vista interior del Restaurante Montecasino">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menú – Restaurante Montecasino, Santa Lucía Milpas Altas">
+  <meta name="twitter:description" content="Menú Restaurante Montecasino. Desayunos, ensaladas, pastas, pizzas, carnes, postres y bebidas. Cocina italiana y guatemalteca, Milpas Altas.">
+  <meta name="twitter:image" content="https://montecasino.gt/images/fotografia/restaurant.jpg">
+  <meta name="twitter:image:alt" content="Vista interior del Restaurante Montecasino">
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
       <div class="content">
-        <div class="logo"><a href="#"><img src="images/grupo-montecasino-light-black.png" alt="Grupo Montecasino"
-              class="logo-img" id="logo-image"></a></div>
+        <div class="logo"><a href="index.html"><img src="images/grupo-montecasino-light-black.png" alt="Grupo Montecasino"
+              class="logo-img" id="logo-image" width="3157" height="1080"></a></div>
         <ul class="menu-list">
           <li>
-            <div class="icon cancel-btn close-btn">
-              <i class="fas fa-times"></i>
-            </div>
+            <button class="icon cancel-btn close-btn" aria-label="Cerrar menú">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
           </li>
           <li class="dropdown">
-            <a href="#" class="selected">Inicio</a>
+            <a href="index.html">Inicio</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Nuestra Historia</a></li>
+              <li class="element"><a href="historia.html">Nuestra Historia</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Restaurante</a>
+            <a href="#" class="selected">Restaurante</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Menú</a></li>
-              <li class="element"><a href="#">Reservaciones</a></li>
+              <li class="element"><a href="menu.html">Menú</a></li>
+              <li class="element"><a href="reservaciones.html">Reservaciones</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#">Eventos</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Catering & Degustaciones</a></li>
-              <li class="element"><a href="#">Reservaciones</a></li>
+              <li class="element"><a href="catering.html">Catering &amp; Degustaciones</a></li>
+              <li class="element"><a href="reservaciones.html">Reservaciones</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Hostal</a>
+            <a href="hostal.html">Hostal</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Muy pronto...</a></li>
+              <li class="element"><a href="hostal.html">Muy pronto...</a></li>
             </ul>
           </li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#" class="action-button">Encuéntranos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html#mapa" class="action-button">Encuéntranos</a></li>
         </ul>
-        <div class="div icon menu-btn">
-          <i class="fas fa-bars hamburger"></i>
-        </div>
+        <button class="icon menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fas fa-bars hamburger" aria-hidden="true"></i>
+        </button>
       </div>
     </nav>
   </header>
-  <main>
+
+  <main id="main-content">
     <section class="menu-intro">
       <h1 class="menu-title">Menú</h1>
-      <img class="restaurant-logo" src="images/restaurante-logo-cream.png" alt="Logo restaurante">
-      <div class="menu-nav">
-
-      </div>
+      <img class="restaurant-logo" src="images/restaurante-logo-cream.png" alt="Logo Restaurante Montecasino" width="1980" height="1080">
     </section>
 
-    <section class="menu-section">
-      <div class="desayunos food-type">
-        <h3 class="section-menu-title"><span>Desayunos</span></h3>
+    <nav class="menu-category-nav" id="menu-category-nav">
+      <a href="#desayunos" class="nav-category" data-section="desayunos">
+        <img src="images/menu-icons/omelette.png" alt="Desayunos">
+        <span>Desayunos</span>
+      </a>
+      <a href="#ensaladas" class="nav-category" data-section="ensaladas">
+        <img src="images/menu-icons/salad.png" alt="Ensaladas">
+        <span>Ensaladas</span>
+      </a>
+      <a href="#pastas" class="nav-category" data-section="pastas">
+        <img src="images/menu-icons/pasta.png" alt="Pastas">
+        <span>Pastas</span>
+      </a>
+      <a href="#pizzas" class="nav-category" data-section="pizzas">
+        <img src="images/menu-icons/pizza.png" alt="Pizzas">
+        <span>Pizzas</span>
+      </a>
+      <a href="#carnes" class="nav-category" data-section="carnes">
+        <img src="images/menu-icons/steak.png" alt="Carnes">
+        <span>Carnes</span>
+      </a>
+      <a href="#postres" class="nav-category" data-section="postres">
+        <img src="images/menu-icons/dessert.png" alt="Postres">
+        <span>Postres</span>
+      </a>
+      <a href="#cafe" class="nav-category" data-section="cafe">
+        <img src="images/menu-icons/coffee.png" alt="Café">
+        <span>Café</span>
+      </a>
+      <a href="#cocteles" class="nav-category" data-section="cocteles">
+        <img src="images/menu-icons/cocktail.png" alt="Cócteles">
+        <span>Cócteles</span>
+      </a>
+      <a href="#cervezas" class="nav-category" data-section="cervezas">
+        <img src="images/menu-icons/beer.png" alt="Cervezas">
+        <span>Cervezas</span>
+      </a>
+      <a href="#vinos" class="nav-category" data-section="vinos">
+        <img src="images/menu-icons/copa-de-vino.png" alt="Vinos">
+        <span>Vinos</span>
+      </a>
+      <a href="#licores" class="nav-category" data-section="licores">
+        <img src="images/menu-icons/alcohol.png" alt="Licores">
+        <span>Licores</span>
+      </a>
+    </nav>
 
+    <section class="menu-section">
+
+      <!-- DESAYUNOS -->
+      <div class="food-type" id="desayunos">
+        <h2 class="section-menu-title"><span>Desayunos</span></h2>
         <div class="menu-content" id="desayunos-menu-content">
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Huevos al Gusto ------------------- </span><span>40</span></h4>
+              <h3><span class="plate-title">Huevos al Gusto</span><span class="plate-price">40</span></h3>
             </div>
             <div class="plate-description">
-              <p>2 huevos al gusto, acompañados de frijoles volteados, platanos fritos, queso panela, media crema y
+              <p>2 huevos al gusto, acompañados de frijoles volteados, plátanos fritos, queso panela, media crema y
                 salsa ranchera.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Huevos Benedictinos --------------- </span><span>50</span></h4>
+              <h3><span class="plate-title">Huevos Benedictinos</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>2 huevos montados sobre panes aromatizados, prosciutto, salsa holandesa. *Acompañados de frijol
-                volteado, platanos fritos, queso panela.</p>
+                volteado, plátanos fritos, queso panela.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Huevos Poché ---------------------- </span><span>40</span></h4>
+              <h3><span class="plate-title">Huevos Poché</span><span class="plate-price">40</span></h3>
             </div>
             <div class="plate-description">
               <p>2 huevos poché, montados sobre pan aromatizado y jamón de pavo. *Acompañado de frijoles volteados,
@@ -143,52 +210,44 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Omelette Chapín ------------------- </span><span>50</span></h4>
+              <h3><span class="plate-title">Omelette Chapín</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Omelette relleno de frijoles, queso panela, aguacate. *Acompañado de platanos fritos, jamòn de pavo,
+              <p>Omelette relleno de frijoles, queso panela, aguacate. *Acompañado de plátanos fritos, jamón de pavo,
                 fruta.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Omelette Al Gusto ----------------- </span><span>50</span></h4>
+              <h3><span class="plate-title">Omelette Al Gusto</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella,
-                tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.
-              </p>
+              <p>Puede elegir 3 ingredientes: champiñones, jamón de pavo, queso mozzarella, tomate, cebolla, tocino.
+                *Acompañados de frijoles volteados, frutas, plátanos fritos, salsa ranchera.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Panqueques ------------------------- </span><span>50</span></h4>
+              <h3><span class="plate-title">Panqueques</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Panqueques de fresa, syrup de chocolate, azúcar glass. *Vaso jugo de naranja.</p>
+              <p>Panqueques de fresa, syrup de chocolate, azúcar glass. *Vaso de jugo de naranja.</p>
             </div>
           </div>
+
         </div>
       </div>
-      <div class="ensaladas food-type">
-        <h3 class="section-menu-title"><span>Ensaladas y Antipasto</span></h3>
 
+      <!-- ENSALADAS Y ANTIPASTO -->
+      <div class="food-type" id="ensaladas">
+        <h2 class="section-menu-title"><span>Ensaladas y Antipasto</span></h2>
         <div class="menu-content" id="ensaladas-menu-content">
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Aguacate Extra ---------------------- </span><span>10</span></h4>
-            </div>
-            <div class="plate-description">
-              <p></p>
-            </div>
-          </div>
-
-          <div class="menu-item">
-            <div class="plate">
-              <h4><span class="plate-title">Bruschetta --------------------------- </span><span>35</span></h4>
+              <h3><span class="plate-title">Bruschetta</span><span class="plate-price">35</span></h3>
             </div>
             <div class="plate-description">
               <p>Rodajas de pan, tomate, albahaca, aceitunas, aceite de oliva.</p>
@@ -197,7 +256,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Carpaccio de Lomito --------------- </span><span>70</span></h4>
+              <h3><span class="plate-title">Carpaccio de Lomito</span><span class="plate-price">70</span></h3>
             </div>
             <div class="plate-description">
               <p>Lomito, arúgula, alcaparras baby, puerro, queso parmesano.</p>
@@ -206,75 +265,559 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Ensalada Caprese ------------------ </span><span>50</span></h4>
+              <h3><span class="plate-title">Ensalada Caprese</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Mozzarella fresca, tomate, albahaca, acetto balsamico.</p>
+              <p>Mozzarella fresca, tomate, albahaca, aceto balsámico.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Ensalada de Arugula e Prosciutto </span><span>65</span></h4>
+              <h3><span class="plate-title">Ensalada de Arúgula e Prosciutto</span><span class="plate-price">65</span></h3>
             </div>
             <div class="plate-description">
-              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella,
-                tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.
-              </p>
+              <p>Arúgula fresca, prosciutto crudo, queso parmesano, nueces, reducción balsámica.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Funghi Al Aglio ---------------------- </span><span>45</span></h4>
+              <h3><span class="plate-title">Funghi Al Aglio</span><span class="plate-price">45</span></h3>
             </div>
             <div class="plate-description">
               <p>Ragú de hongos, champiñones, portobello, crimini.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Melón y Prosciutto ----------------- </span><span>50</span></h4>
+              <h3><span class="plate-title">Melón y Prosciutto</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Prosciutto crudo, melón, arúgula, reducción de balsámico..</p>
+              <p>Prosciutto crudo, melón, arúgula, reducción de balsámico.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Pulpo Al Ajo ---------------------- </span><span>55</span></h4>
+              <h3><span class="plate-title">Pulpo Al Ajo</span><span class="plate-price">55</span></h3>
             </div>
             <div class="plate-description">
               <p>Pulpos, camarones, cebolla morada, ajo.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Vitello Tonnato ---------------------- </span><span>50</span></h4>
+              <h3><span class="plate-title">Vitello Tonnato</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>Lascas de lomo, arúgula, en salsa de atún.</p>
             </div>
           </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Aguacate Extra</span><span class="plate-price">10</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Adición de aguacate fresco a cualquier platillo.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <!-- PASTAS -->
+      <div class="food-type" id="pastas">
+        <h2 class="section-menu-title"><span>Pastas</span></h2>
+        <div class="menu-content" id="pastas-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Spaghetti Carbonara</span><span class="plate-price">75</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Spaghetti con panceta ahumada, huevo, queso parmesano, pimienta negra.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Rigatoni al Ragú</span><span class="plate-price">80</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Rigatoni con ragú de res, vino tinto, tomate, hierbas frescas.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Fettuccine al Pesto</span><span class="plate-price">70</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Fettuccine con pesto de albahaca, piñones, queso parmesano.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Penne all'Arrabbiata</span><span class="plate-price">65</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Penne con salsa de tomate picante, ajo, peperoncino.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Linguine ai Frutti di Mare</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Linguine con camarones, pulpo, almejas, salsa de tomate.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Lasagna della Casa</span><span class="plate-price">85</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Lasagna con ragú de res y bechamel, gratinada al horno.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PIZZAS -->
+      <div class="food-type" id="pizzas">
+        <h2 class="section-menu-title"><span>Pizzas</span></h2>
+        <div class="menu-content" id="pizzas-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Margherita</span><span class="plate-price">70</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Salsa de tomate, mozzarella fresca, albahaca.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Quattro Formaggi</span><span class="plate-price">85</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, parmesano, gorgonzola, ricotta.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Prosciutto e Funghi</span><span class="plate-price">90</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Prosciutto crudo, champiñones mixtos, mozzarella.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Diavola</span><span class="plate-price">80</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Salami picante, jalapeño, mozzarella, aceitunas negras.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Trufa y Portobello</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Crema de trufa, portobello, rúcula, mozzarella.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Quattro Stagioni</span><span class="plate-price">85</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Jamón, champiñones, alcachofas, aceitunas negras, mozzarella.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARNES -->
+      <div class="food-type" id="carnes">
+        <h2 class="section-menu-title"><span>Carnes</span></h2>
+        <div class="menu-content" id="carnes-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Lomito al Vino Tinto</span><span class="plate-price">120</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Lomito de res, reducción de vino tinto, puré rústico, vegetales salteados.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pollo a la Provenzal</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Pechuga de pollo, tomate, aceitunas, alcaparras, vino blanco.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Chuleta de Cerdo</span><span class="plate-price">100</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Chuleta de cerdo a la parrilla, compota de manzana, puré de papa.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Costillas BBQ</span><span class="plate-price">115</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Costillas de cerdo en salsa BBQ artesanal, papas rústicas, ensalada fresca.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">T-Bone Montecasino</span><span class="plate-price">150</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Corte T-Bone de res a la parrilla, chimichurri, papas al romero.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- POSTRES -->
+      <div class="food-type" id="postres">
+        <h2 class="section-menu-title"><span>Postres</span></h2>
+        <div class="menu-content" id="postres-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Tiramisú</span><span class="plate-price">45</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Clásico postre italiano con mascarpone, café y savoiardi.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Panna Cotta</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Panna cotta de vainilla con coulis de frutos rojos.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Coulant de Chocolate</span><span class="plate-price">50</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Bizcocho con centro fundido de chocolate, helado de vainilla.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Helado Artesanal</span><span class="plate-price">35</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Selección de sabores artesanales de temporada. Pregunte a su mesero.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Cannoli Siciliani</span><span class="plate-price">45</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Cannoli rellenos de ricotta dulce y chips de chocolate.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BEBIDAS HEADING -->
+      <div class="bebidas-divider">
+        <span>Bebidas</span>
+      </div>
+
+      <!-- CAFÉ -->
+      <div class="food-type" id="cafe">
+        <h2 class="section-menu-title"><span>Café y Bebidas Calientes</span></h2>
+        <div class="menu-content menu-content-narrow" id="cafe-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Espresso</span><span class="plate-price">15</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Americano</span><span class="plate-price">20</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Cappuccino</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Café Latte</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Chocolate Caliente</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Té de Hierbas</span><span class="plate-price">20</span></h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CÓCTELES -->
+      <div class="food-type" id="cocteles">
+        <h2 class="section-menu-title"><span>Cócteles</span></h2>
+        <div class="menu-content" id="cocteles-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Spritz Montecasino</span><span class="plate-price">60</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Aperol, prosecco, soda, rodaja de naranja.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Negroni</span><span class="plate-price">65</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Gin, campari, vermut rojo.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Mojito</span><span class="plate-price">55</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Ron blanco, menta, limón, azúcar, soda.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Daiquiri de Fresa</span><span class="plate-price">55</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Ron blanco, fresa, limón, azúcar.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Margarita</span><span class="plate-price">55</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Tequila, triple sec, limón, sal.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Paloma Rosa</span><span class="plate-price">60</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Tequila, toronja, agua mineral, sal de gusano.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CERVEZAS -->
+      <div class="food-type" id="cervezas">
+        <h2 class="section-menu-title"><span>Cervezas</span></h2>
+        <div class="menu-content menu-content-narrow" id="cervezas-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Gallo Lager</span><span class="plate-price">30</span></h3>
+            </div>
+            <div class="plate-description"><p>330ml</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Victoria Negra</span><span class="plate-price">30</span></h3>
+            </div>
+            <div class="plate-description"><p>330ml</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Modelo Especial</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description"><p>355ml</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Corona Extra</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description"><p>330ml</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Stella Artois</span><span class="plate-price">45</span></h3>
+            </div>
+            <div class="plate-description"><p>330ml</p></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VINOS -->
+      <div class="food-type" id="vinos">
+        <h2 class="section-menu-title"><span>Vinos</span></h2>
+        <div class="menu-content" id="vinos-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Vino Tinto de la Casa</span><span class="plate-price">Copa 45 / Botella 175</span></h3>
+            </div>
+            <div class="plate-description"><p>Selección del sommelier.</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Vino Blanco de la Casa</span><span class="plate-price">Copa 45 / Botella 175</span></h3>
+            </div>
+            <div class="plate-description"><p>Selección del sommelier.</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Malbec Reserva</span><span class="plate-price">Copa 65 / Botella 250</span></h3>
+            </div>
+            <div class="plate-description"><p>Argentina. Notas de frutos rojos, ciruela y especias.</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pinot Grigio</span><span class="plate-price">Copa 55 / Botella 220</span></h3>
+            </div>
+            <div class="plate-description"><p>Italia. Fresco, con notas cítricas y florales.</p></div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Cabernet Sauvignon</span><span class="plate-price">Copa 70 / Botella 280</span></h3>
+            </div>
+            <div class="plate-description"><p>Chile. Cuerpo pleno, taninos elegantes, notas de cedro.</p></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LICORES -->
+      <div class="food-type" id="licores">
+        <h2 class="section-menu-title"><span>Licores</span></h2>
+        <div class="menu-content menu-content-narrow" id="licores-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Limoncello</span><span class="plate-price">50</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Grappa</span><span class="plate-price">55</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Aperol</span><span class="plate-price">45</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Fernet</span><span class="plate-price">55</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Ron Zacapa 23</span><span class="plate-price">80</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Whisky Escocés</span><span class="plate-price">70</span></h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
   </main>
+
   <footer class="footer-bar">
-    <div class="footer-logo"><img class="footer-image" src="images/grupo-montecasino-cream.png" alt="Logo Montecasino">
+    <div class="footer-logo"><img class="footer-image" src="images/grupo-montecasino-cream.png" alt="Logo Montecasino" loading="lazy" width="3157" height="1080">
     </div>
     <div class="footer-text">
-      <a href="tel:+502-4614-9855" class="phone-number"><i class="fas fa-phone"></i> +(502) 4614-9855</a>
-      <a href="#"><i class="fas fa-map-marker"></i> Km. 34 Carretera de Antigua a Ciudad Guatemala, Santa Lucía Milpas
+      <a href="tel:+502-4614-9855" class="phone-number"><i class="fas fa-phone" aria-hidden="true"></i> +(502) 4614-9855</a>
+      <a href="contacto.html#mapa"><i class="fas fa-map-marker" aria-hidden="true"></i> Km. 34 Carretera de Antigua a Ciudad Guatemala, Santa Lucía Milpas
         Altas</a>
       <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
-  <!--JavaScript file-->
+
   <script src="main.js"></script>
 </body>
 

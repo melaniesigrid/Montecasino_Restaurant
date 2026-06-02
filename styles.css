@@ -343,6 +343,7 @@ ul {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 100vh;
+  overflow: hidden;
 }
 
 .color-block {
@@ -606,9 +607,60 @@ body { animation: mc-fadein 0.4s ease both; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body, .relax, .intro-btn { animation: none; }
+  body, .relax, .intro-btn, .intro { animation: none; }
   [data-reveal] { opacity: 1 !important; transform: none !important; }
   .reveal-visible { transition: none !important; }
+  .grid-area .picture-block,
+  .grid-area.in-view .picture-block { transform: none !important; transition: none !important; }
+  [data-grid] .invitation,
+  [data-grid] .paragraph-container,
+  [data-grid] .logo-restaurante,
+  [data-grid] #green-breathe,
+  [data-grid] #cream-separator,
+  [data-grid] .montecasino-title,
+  [data-grid] .small-text-container { opacity: 1 !important; animation: none !important; }
 }
+
+/* ── Inicio: hero slow pan ── */
+@keyframes mc-hero-pan {
+  0%   { background-position: center 42%; }
+  100% { background-position: center 58%; }
+}
+
+.intro { animation: mc-hero-pan 30s ease-in-out infinite alternate; }
+
+/* ── Inicio: directional slide keyframes ── */
+@keyframes mc-slideleft {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes mc-slideright {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ── Inicio: picture-block zoom (always starts zoomed, releases on in-view) ── */
+.grid-area .picture-block {
+  transform: scale(1.06);
+  transition: none;
+}
+
+.grid-area.in-view .picture-block {
+  transform: scale(1.0);
+  transition: transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* ── Inicio: presentation block child animations ── */
+/* JS sets opacity:0 on children; in-view class triggers these CSS animations */
+
+[data-grid].in-view .invitation          { animation: mc-slideleft  0.70s ease 0.10s both; }
+[data-grid].in-view .paragraph-container { animation: mc-slideup    0.65s ease 0.32s both; }
+[data-grid].in-view .logo-restaurante    { animation: mc-slideup    0.65s ease 0.52s both; }
+
+[data-grid].in-view #green-breathe       { animation: mc-slideright 0.70s ease 0.12s both; }
+[data-grid].in-view #cream-separator     { animation: mc-fadein     0.50s ease 0.30s both; }
+[data-grid].in-view .montecasino-title   { animation: mc-slideright 0.70s ease 0.42s both; }
+[data-grid].in-view .small-text-container{ animation: mc-slideup    0.65s ease 0.60s both; }
 
 /*# sourceMappingURL=styles.css.map */

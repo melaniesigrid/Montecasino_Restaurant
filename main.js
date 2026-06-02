@@ -68,7 +68,6 @@ if (navCategories.length > 0) {
   if (!('IntersectionObserver' in window)) return;
 
   const selectors = [
-    '.grid-area',
     '.historia-block',
     '.value-item',
     '.feature-item',
@@ -110,4 +109,35 @@ if (navCategories.length > 0) {
   }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
   els.forEach(el => observer.observe(el));
+})();
+
+// Inicio grid-section child reveals
+(function gridReveal() {
+  const grids = document.querySelectorAll('.presentation .grid-area');
+  if (!grids.length || !('IntersectionObserver' in window)) return;
+
+  const childSelectors = [
+    '.invitation', '.paragraph-container', '.logo-restaurante',
+    '#green-breathe', '#cream-separator', '.montecasino-title', '.small-text-container',
+  ];
+
+  grids.forEach(grid => {
+    grid.setAttribute('data-grid', '');
+    childSelectors.forEach(sel => {
+      grid.querySelectorAll(sel).forEach(el => {
+        el.style.opacity = '0';
+        el.style.transition = 'none';
+      });
+    });
+  });
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in-view');
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.15 });
+
+  grids.forEach(g => obs.observe(g));
 })();

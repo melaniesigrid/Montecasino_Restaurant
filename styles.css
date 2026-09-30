@@ -335,6 +335,15 @@ ul {
   font-weight: bold;
 }
 
+.intro-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 24px;
+}
+
 .intro-btn:hover {
   cursor: pointer;
   color: #323337;

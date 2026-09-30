@@ -29,7 +29,7 @@ body {
 
 .menu-category-nav {
   position: sticky;
-  top: 80px;
+  top: var(--nav-h, 80px);
   z-index: 2;
   background-color: #1e2023;
   display: flex;
@@ -100,7 +100,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  scroll-margin-top: 175px;
+  scroll-margin-top: calc(var(--nav-h, 80px) + 95px);
 }
 
 .section-menu-title {
@@ -230,6 +230,7 @@ h2 span {
 
   .menu-title {
     font-size: 48px;
+    padding-top: 130px;
   }
 
   .restaurant-logo {
@@ -251,5 +252,14 @@ h2 span {
 
   .section-menu-title {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* Side rules shrink to dots and wrapped titles overlap — drop the strike line */
+  .section-menu-title {
+    border-bottom: none;
+    line-height: 1.15;
+    margin: 56px auto 32px;
   }
 }

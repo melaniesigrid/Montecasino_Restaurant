@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: var(--nav-h, 80px);
 }
 
 /* Skip-to-content link — visible on focus only */
@@ -84,8 +84,8 @@ ul {
 }
 
 .logo-img {
-  margin-left: 50px;
-  max-width: 300px;
+  margin-left: clamp(20px, 3vw, 50px);
+  max-width: min(300px, 18vw);
   height: auto;
 }
 
@@ -118,7 +118,7 @@ ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 70px;
+  margin-right: clamp(20px, 3vw, 60px);
   font-family: 'ArticulatCF', sans-serif;
   letter-spacing: 3px;
   font-weight: bold;
@@ -128,7 +128,7 @@ ul {
 
 .menu-list li a {
   padding: 5px 15px;
-  margin-left: 50px;
+  margin-left: clamp(8px, 1.6vw, 40px);
   border: 3px solid transparent;
 }
 
@@ -225,9 +225,13 @@ ul {
 }
 
 .icon {
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
   /* Reset for <button> elements */
   background: none;
   border: none;
@@ -242,27 +246,28 @@ ul {
 }
 
 .menu-btn {
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .cancel-btn {
   position: absolute;
-  right: 30px;
-  top: 20px;
+  right: 16px;
+  top: 12px;
 }
 
 .scroll-active {
   background-color: #efebda;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  height: 100px;
-  padding-top: 0;
+  padding: 4px 0;
 }
 
 .intro {
   background-image: url(images/compuesta3be.jpg);
   background-position: center;
   height: 100vh;
+  height: 100svh;
+  min-height: 480px;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,7 +288,8 @@ ul {
 .intro-banner {
   margin-top: 70px;
   background-color: rgba(50, 51, 55, 0.8);
-  width: 100vw;
+  width: 100%;
+  padding: 0 20px;
   color: #efebda;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,16 +309,18 @@ ul {
 .relax {
   font-family: ArticulatCF, sans-serif;
   font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 5.7px;
+  font-size: clamp(34px, 6.5vw, 64px);
+  line-height: 1.1;
+  letter-spacing: 0.09em;
+  text-wrap: balance;
   text-transform: uppercase;
   margin-top: 50px;
 }
 
 .intro-btn {
-  margin: 45px auto;
-  height: 60px;
-  width: 250px;
+  margin: 40px auto;
+  min-height: 56px;
+  width: min(250px, 100%);
   border: 3px solid #efebda;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,6 +338,15 @@ ul {
   font-weight: bold;
 }
 
+.intro-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 24px;
+}
+
 .intro-btn:hover {
   cursor: pointer;
   color: #323337;
@@ -342,35 +359,41 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .color-block {
   font-family: ArticulatCF, sans-serif;
-  width: 50vw;
+  min-width: 0;
 }
 
 #restaurant-color-block {
   background-color: #ff761e;
-  padding: 90px;
+  padding: clamp(40px, 7vw, 110px) clamp(24px, 6vw, 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(20px, 3vw, 36px);
 }
 
 .picture-block {
-  width: 50vw;
   background-image: url(images/fotografia/restaurant-square.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .invitation-container {
-  max-width: 38vw;
-  padding: 20px;
+  max-width: 13ch;
+  font-size: clamp(36px, 4.8vw, 70px);
 }
 
 .invitation {
   color: white;
-  font-size: 70px;
+  font-size: inherit;
+  line-height: 1.05;
   font-weight: bold;
+  text-wrap: balance;
 }
 
 .montecasino-small:hover {
@@ -381,7 +404,7 @@ ul {
 .small-separator {
   max-width: 200px;
   border-top: 3px solid;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 #white-separator {
@@ -391,20 +414,20 @@ ul {
 
 .paragraph-container {
   color: white;
-  font-size: 30px;
-  margin: 20px;
+  font-size: clamp(18px, 2vw, 30px);
+  line-height: 1.35;
+  max-width: 28ch;
 }
 
 .logo-restaurante {
-  max-width: 500px;
-  margin-right: 50px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  display: block;
+  width: min(100%, 420px);
 }
 
 #respira {
   background-image: url(images/fotografia/hojas.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #jardines-color-block {
@@ -418,13 +441,14 @@ ul {
 .text-container {
   background-color: #7f9f45;
   font-family: ArticulatCF, sans-serif;
-  font-size: 40px;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.1;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  padding: clamp(40px, 6vw, 90px) clamp(24px, 5vw, 70px);
   font-weight: bold;
+  min-width: 0;
 }
 
 .small-text-container {
@@ -433,69 +457,80 @@ ul {
   z-index: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 3fr;
-      grid-template-columns: 2fr 3fr;
-}
-
-.title-container {
-  width: 400px;
-  margin-bottom: 30px;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: clamp(20px, 3vw, 40px);
+  padding: clamp(28px, 4vw, 48px) clamp(24px, 5vw, 70px);
 }
 
 #green-breathe {
   color: #efebda;
-  margin-left: 70px;
+  text-wrap: balance;
 }
 
 #cream-separator {
-  margin-left: 70px;
   border-color: #efebda;
   background-color: #efebda;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .cabin {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  width: 290px;
+  width: clamp(80px, 9vw, 150px);
 }
 
 .another-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .vertical-separator {
-  width: 5px;
-  height: 150px;
+  flex: 0 0 4px;
   background-color: #efebda;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .mini-div {
   color: #efebda;
-  width: 300px;
+  max-width: 34ch;
 }
 
 .tiny-title {
-  font-size: 30px;
+  font-size: clamp(22px, 2vw, 30px);
   font-weight: bold;
+  margin-bottom: 6px;
 }
 
 .cabin-text {
-  font-size: 20px;
-  text-align: justify;
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.45;
 }
 
 .montecasino-title {
-  max-width: 800px;
+  display: block;
+  width: 100%;
+  max-width: 640px;
+}
+
+@media (max-width: 900px) {
+  .grid-area {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .picture-block {
+    min-height: 70vw;
+  }
+  #respira {
+    order: 2;
+  }
+  #jardines-color-block {
+    grid-template-rows: auto auto;
+  }
 }
 
 .menu-intro {
@@ -506,14 +541,15 @@ ul {
 /* Compact nav — reduce spacing before hamburger kicks in */
 @media (max-width: 1380px) {
   .logo-img {
-    margin-left: 30px;
-    max-width: 200px;
+    margin-left: 24px;
+    max-width: 180px;
   }
   .menu-list {
-    margin-right: 30px;
+    margin-right: 24px;
   }
   .menu-list li a {
-    margin-left: 20px;
+    padding: 5px 10px;
+    margin-left: clamp(2px, 0.8vw, 20px);
     font-size: 12px;
     letter-spacing: 2px;
   }
@@ -521,7 +557,7 @@ ul {
 
 @media (max-width: 1024px) {
   .icon {
-    display: block;
+    display: flex;
   }
   .icon.hide {
     display: none;
@@ -531,11 +567,14 @@ ul {
     top: 0;
     background-color: #efebda;
     height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     width: 100%;
     left: -100%;
     max-width: 400px;
     display: block;
-    padding: 40px 0;
+    padding: 40px 0 56px;
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -544,13 +583,15 @@ ul {
     left: 0%;
   }
   .navbar .menu-list li {
-    margin-top: 45px;
+    margin-top: clamp(24px, 5vh, 45px);
   }
   .navbar .menu-list li a {
     font-size: 20px;
   }
   .navbar ul li.dropdown ul {
     position: static;
+    min-width: 0;
+    margin-left: 0;
     font-size: 15px;
     background-color: #efebda;
     opacity: 1;

@@ -20,13 +20,23 @@ if (cancelBtn) {
   };
 }
 
-window.addEventListener('scroll', () => {
-  const nav = document.querySelector('nav');
+// Expose the fixed navbar's real height so sticky/anchor offsets match every screen size
+const syncNavHeight = () => {
+  document.documentElement.style.setProperty('--nav-h', `${navbar.offsetHeight}px`);
+};
+
+const onScroll = () => {
   const logoImage = document.getElementById('logo-image');
   const windowPosition = window.scrollY > 40;
-  nav.classList.toggle('scroll-active', windowPosition);
+  navbar.classList.toggle('scroll-active', windowPosition);
   logoImage.classList.toggle('logo-scroll', windowPosition);
-});
+  syncNavHeight();
+};
+
+window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('resize', syncNavHeight);
+window.addEventListener('load', syncNavHeight);
+onScroll();
 
 // Category nav active state
 const navCategories = document.querySelectorAll('.nav-category');
@@ -34,12 +44,13 @@ const navCategories = document.querySelectorAll('.nav-category');
 if (navCategories.length > 0) {
   const sectionIds = Array.from(navCategories).map(a => a.dataset.section).filter(Boolean);
   const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
-  const categoryNavHeight = 175;
+  const categoryNav = document.querySelector('.menu-category-nav');
+  const offset = () => navbar.offsetHeight + (categoryNav ? categoryNav.offsetHeight : 0);
 
   const updateActive = () => {
     let current = sectionIds[0];
     sections.forEach(section => {
-      if (section.getBoundingClientRect().top <= categoryNavHeight + 10) {
+      if (section.getBoundingClientRect().top <= offset() + 10) {
         current = section.id;
       }
     });
@@ -56,7 +67,7 @@ if (navCategories.length > 0) {
       e.preventDefault();
       const target = document.getElementById(a.dataset.section);
       if (target) {
-        const top = target.getBoundingClientRect().top + window.scrollY - categoryNavHeight;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset();
         window.scrollTo({ top, behavior: 'smooth' });
       }
     });

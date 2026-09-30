@@ -410,8 +410,7 @@
   }
 
   .form-row {
-    grid-template-columns: 1fr;
-    gap: 0;
+    gap: 24px;
   }
 
   .contacto-section,
@@ -421,6 +420,11 @@
 }
 
 @media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
   .contacto-heading {
     font-size: 24px;
   }

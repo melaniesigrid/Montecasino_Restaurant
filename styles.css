@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: var(--nav-h, 80px);
 }
 
 /* Skip-to-content link — visible on focus only */
@@ -259,8 +259,7 @@ ul {
   background-color: #efebda;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  height: 100px;
-  padding-top: 0;
+  padding: 4px 0;
 }
 
 .intro {
@@ -568,11 +567,14 @@ ul {
     top: 0;
     background-color: #efebda;
     height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     width: 100%;
     left: -100%;
     max-width: 400px;
     display: block;
-    padding: 40px 0;
+    padding: 40px 0 56px;
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -581,13 +583,15 @@ ul {
     left: 0%;
   }
   .navbar .menu-list li {
-    margin-top: 45px;
+    margin-top: clamp(24px, 5vh, 45px);
   }
   .navbar .menu-list li a {
     font-size: 20px;
   }
   .navbar ul li.dropdown ul {
     position: static;
+    min-width: 0;
+    margin-left: 0;
     font-size: 15px;
     background-color: #efebda;
     opacity: 1;

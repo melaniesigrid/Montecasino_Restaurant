@@ -138,15 +138,17 @@
 
 .page-hero-overlay {
   background-color: rgba(50, 51, 55, 0.75);
-  padding: 50px 80px;
+  padding: clamp(32px, 5vw, 50px) clamp(20px, 6vw, 80px);
+  max-width: calc(100% - 32px);
   text-align: center;
   color: #efebda;
   font-family: ArticulatCF, sans-serif;
 }
 
 .page-title {
-  font-size: 55px;
-  letter-spacing: 5px;
+  font-size: clamp(28px, 7vw, 55px);
+  line-height: 1.1;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -419,14 +421,6 @@
 }
 
 @media (max-width: 600px) {
-  .page-title {
-    font-size: 36px;
-  }
-
-  .page-hero-overlay {
-    padding: 36px 24px;
-  }
-
   .contacto-heading {
     font-size: 24px;
   }

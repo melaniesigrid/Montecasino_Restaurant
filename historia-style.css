@@ -10,15 +10,17 @@
 
 .historia-hero-overlay {
   background-color: rgba(50, 51, 55, 0.75);
-  padding: 60px 80px;
+  padding: clamp(32px, 5vw, 60px) clamp(20px, 6vw, 80px);
+  max-width: calc(100% - 32px);
   text-align: center;
   color: #efebda;
   font-family: ArticulatCF, sans-serif;
 }
 
 .historia-title {
-  font-size: 60px;
-  letter-spacing: 5px;
+  font-size: clamp(30px, 7vw, 60px);
+  line-height: 1.1;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -31,8 +33,8 @@
 }
 
 .historia-subtitle {
-  font-size: 22px;
-  letter-spacing: 3px;
+  font-size: clamp(17px, 2.4vw, 22px);
+  letter-spacing: 0.12em;
   font-style: italic;
   opacity: 0.85;
 }
@@ -64,7 +66,8 @@
 }
 
 .historia-text {
-  padding: 70px 80px;
+  padding: clamp(48px, 6vw, 80px) clamp(24px, 6vw, 80px);
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,10 +75,11 @@
 }
 
 .historia-text h2 {
-  font-size: 40px;
+  font-size: clamp(26px, 3.4vw, 40px);
+  line-height: 1.1;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.07em;
   margin-bottom: 16px;
 }
 
@@ -124,13 +128,13 @@
 .historia-values {
   background-color: #323337;
   color: #efebda;
-  padding: 80px 60px;
+  padding: clamp(56px, 8vw, 80px) clamp(24px, 5vw, 60px);
   text-align: center;
 }
 
 .values-title {
-  font-size: 40px;
-  letter-spacing: 4px;
+  font-size: clamp(26px, 3.4vw, 40px);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
@@ -193,20 +197,8 @@
     min-height: 300px;
   }
 
-  .historia-text {
-    padding: 50px 32px;
-  }
-
   .values-grid {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-
-  .historia-title {
-    font-size: 38px;
-  }
-
-  .historia-hero-overlay {
-    padding: 40px 30px;
   }
 }

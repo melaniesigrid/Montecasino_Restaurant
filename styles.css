@@ -225,9 +225,13 @@ ul {
 }
 
 .icon {
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
   /* Reset for <button> elements */
   background: none;
   border: none;
@@ -242,13 +246,13 @@ ul {
 }
 
 .menu-btn {
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .cancel-btn {
   position: absolute;
-  right: 30px;
-  top: 20px;
+  right: 16px;
+  top: 12px;
 }
 
 .scroll-active {
@@ -553,7 +557,7 @@ ul {
 
 @media (max-width: 1024px) {
   .icon {
-    display: block;
+    display: flex;
   }
   .icon.hide {
     display: none;

@@ -84,8 +84,8 @@ ul {
 }
 
 .logo-img {
-  margin-left: 50px;
-  max-width: 300px;
+  margin-left: clamp(20px, 3vw, 50px);
+  max-width: min(300px, 18vw);
   height: auto;
 }
 
@@ -118,7 +118,7 @@ ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 70px;
+  margin-right: clamp(20px, 3vw, 60px);
   font-family: 'ArticulatCF', sans-serif;
   letter-spacing: 3px;
   font-weight: bold;
@@ -128,7 +128,7 @@ ul {
 
 .menu-list li a {
   padding: 5px 15px;
-  margin-left: 50px;
+  margin-left: clamp(8px, 1.6vw, 40px);
   border: 3px solid transparent;
 }
 
@@ -542,14 +542,15 @@ ul {
 /* Compact nav — reduce spacing before hamburger kicks in */
 @media (max-width: 1380px) {
   .logo-img {
-    margin-left: 30px;
-    max-width: 200px;
+    margin-left: 24px;
+    max-width: 180px;
   }
   .menu-list {
-    margin-right: 30px;
+    margin-right: 24px;
   }
   .menu-list li a {
-    margin-left: 20px;
+    padding: 5px 10px;
+    margin-left: clamp(2px, 0.8vw, 20px);
     font-size: 12px;
     letter-spacing: 2px;
   }

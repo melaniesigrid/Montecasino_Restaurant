@@ -1,7 +1,6 @@
-# Grupo Montecasino Webpage (In Progress...)
+# Grupo Montecasino Webpage
 
 > A webpage for Corporación Montecasino, an event venue, restaurant and hotel.
-My first project as a freelance web designer and developer.
 
 ![screenshot](./preliminary-screenshot.png)
 
@@ -21,8 +20,7 @@ My first project as a freelance web designer and developer.
 👤 **Melanie Sigrid**
 
 - GitHub: [@melaniesigrid](https://github.com/melaniesigrid)
-- Twitter: [@SiriMoon11](https://twitter.com/SiriMoon11)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melanie-arellano-92aaa9194/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melaniesigrid/)
 
 ## 🤝 Contributing
 

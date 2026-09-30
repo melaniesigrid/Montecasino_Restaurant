@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="font" type="font/otf" href="fonts/ArticulatCF/ArticulatCF-Medium.otf" crossorigin>
   <!-- CSS Stylesheets-->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="menu-style.css">
@@ -16,8 +17,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
 
@@ -42,162 +41,222 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <title>Menú</title>
+  <meta name="description" content="Menú Restaurante Montecasino. Desayunos, ensaladas, pastas, pizzas, carnes, postres y bebidas. Cocina italiana y guatemalteca, Milpas Altas.">
+  <title>Menú – Restaurante Montecasino, Santa Lucía Milpas Altas</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://montecasino.gt/menu.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grupo Montecasino">
+  <meta property="og:locale" content="es_GT">
+  <meta property="og:title" content="Menú – Restaurante Montecasino, Santa Lucía Milpas Altas">
+  <meta property="og:description" content="Menú Restaurante Montecasino. Desayunos, ensaladas, pastas, pizzas, carnes, postres y bebidas. Cocina italiana y guatemalteca, Milpas Altas.">
+  <meta property="og:url" content="https://montecasino.gt/menu.html">
+  <meta property="og:image" content="https://montecasino.gt/images/fotografia/restaurant.jpg">
+  <meta property="og:image:alt" content="Vista interior del Restaurante Montecasino">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menú – Restaurante Montecasino, Santa Lucía Milpas Altas">
+  <meta name="twitter:description" content="Menú Restaurante Montecasino. Desayunos, ensaladas, pastas, pizzas, carnes, postres y bebidas. Cocina italiana y guatemalteca, Milpas Altas.">
+  <meta name="twitter:image" content="https://montecasino.gt/images/fotografia/restaurant.jpg">
+  <meta name="twitter:image:alt" content="Vista interior del Restaurante Montecasino">
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
       <div class="content">
-        <div class="logo"><a href="index.html"><img src="images/grupo-montecasino-light-black.png"
-              alt="Grupo Montecasino" class="logo-img" id="logo-image"></a></div>
+        <div class="logo"><a href="index.html"><img src="images/grupo-montecasino-light-black.png" alt="Grupo Montecasino"
+              class="logo-img" id="logo-image" width="3157" height="1080"></a></div>
         <ul class="menu-list">
           <li>
-            <div class="icon cancel-btn close-btn">
-              <i class="fas fa-times"></i>
-            </div>
+            <button class="icon cancel-btn close-btn" aria-label="Cerrar menú">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
           </li>
           <li class="dropdown">
-            <a href="index.html" class="selected">Inicio</a>
+            <a href="index.html">Inicio</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Nuestra Historia</a></li>
+              <li class="element"><a href="historia.html">Nuestra Historia</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Restaurante</a>
+            <a href="#" class="selected">Restaurante</a>
             <ul>
               <li class="space"></li>
               <li class="element"><a href="menu.html">Menú</a></li>
-              <li class="element"><a href="#">Reservaciones</a></li>
+              <li class="element"><a href="reservaciones.html">Reservaciones</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#">Eventos</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Catering & Degustaciones</a></li>
-              <li class="element"><a href="#">Reservaciones</a></li>
+              <li class="element"><a href="catering.html">Catering &amp; Degustaciones</a></li>
+              <li class="element"><a href="reservaciones.html">Reservaciones</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Hostal</a>
+            <a href="hostal.html">Hostal</a>
             <ul>
               <li class="space"></li>
-              <li class="element"><a href="#">Muy pronto...</a></li>
+              <li class="element"><a href="hostal.html">Muy pronto...</a></li>
             </ul>
           </li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#" class="action-button">Encuéntranos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html#mapa" class="action-button">Encuéntranos</a></li>
         </ul>
-        <div class="div icon menu-btn">
-          <i class="fas fa-bars hamburger"></i>
-        </div>
+        <button class="icon menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fas fa-bars hamburger" aria-hidden="true"></i>
+        </button>
       </div>
     </nav>
   </header>
-  <main>
+
+  <main id="main-content">
     <section class="menu-intro">
       <h1 class="menu-title">Menú</h1>
-      <img class="restaurant-logo" src="images/restaurante-logo-cream.png" alt="Logo restaurante">
-      <div class="menu-nav">
-
-      </div>
+      <img class="restaurant-logo" src="images/restaurante-logo-cream.png" alt="Logo Restaurante Montecasino" width="1980" height="1080">
     </section>
 
-    <section class="menu-section">
-      <div class="desayunos food-type">
-        <div class="title-container">
-          <div class="expandable-separator"></div>
-          <h3>Desayunos</h3>
-          <div class="expandable-separator"></div>
-        </div>
+    <nav class="menu-category-nav" id="menu-category-nav" aria-label="Categorías del menú">
+      <a href="#desayunos" class="nav-category" data-section="desayunos">
+        <img src="images/menu-icons/omelette.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Desayunos</span>
+      </a>
+      <a href="#ensaladas" class="nav-category" data-section="ensaladas">
+        <img src="images/menu-icons/salad.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Ensaladas</span>
+      </a>
+      <a href="#pastas" class="nav-category" data-section="pastas">
+        <img src="images/menu-icons/pasta.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Pastas</span>
+      </a>
+      <a href="#pizzas" class="nav-category" data-section="pizzas">
+        <img src="images/menu-icons/pizza.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Pizzas</span>
+      </a>
+      <a href="#carnes" class="nav-category" data-section="carnes">
+        <img src="images/menu-icons/steak.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Fuertes</span>
+      </a>
+      <a href="#postres" class="nav-category" data-section="postres">
+        <img src="images/menu-icons/dessert.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Postres</span>
+      </a>
+      <a href="#cafe" class="nav-category" data-section="cafe">
+        <img src="images/menu-icons/coffee.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Café</span>
+      </a>
+      <a href="#bebidas-frias" class="nav-category" data-section="bebidas-frias">
+        <img src="images/menu-icons/cocktail.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Refrescos</span>
+      </a>
+      <a href="#cocteles" class="nav-category" data-section="cocteles">
+        <img src="images/menu-icons/cocktail.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Cócteles</span>
+      </a>
+      <a href="#cervezas" class="nav-category" data-section="cervezas">
+        <img src="images/menu-icons/beer.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Cervezas</span>
+      </a>
+      <a href="#vinos" class="nav-category" data-section="vinos">
+        <img src="images/menu-icons/copa-de-vino.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Vinos</span>
+      </a>
+      <a href="#aperitivos" class="nav-category" data-section="aperitivos">
+        <img src="images/menu-icons/limoncello.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Aperitivos</span>
+      </a>
+      <a href="#licores" class="nav-category" data-section="licores">
+        <img src="images/menu-icons/alcohol.png" alt="" aria-hidden="true" width="32" height="32">
+        <span>Licores</span>
+      </a>
+    </nav>
 
+    <section class="menu-section">
+
+      <!-- DESAYUNOS -->
+      <div class="food-type" id="desayunos">
+        <h2 class="section-menu-title"><span>Desayunos</span></h2>
         <div class="menu-content" id="desayunos-menu-content">
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Huevos al Gusto <div class="price-separator"></div> 40</span></h4>
+              <h3><span class="plate-title">Huevos al Gusto</span><span class="plate-price">40</span></h3>
             </div>
             <div class="plate-description">
-              <p>2 huevos al gusto, acompañados de frijoles volteados, platanos fritos, queso panela, media crema y
-                salsa ranchera.</p>
+              <p>2 huevos al gusto, acompañados de frijoles volteados, platanos fritos, queso panela, media crema y salsa ranchera.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Huevos Benedictinos <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Huevos Benedictinos</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>2 huevos montados sobre panes aromatizados, prosciutto, salsa holandesa. *Acompañados de frijol
-                volteado, platanos fritos, queso panela.</p>
+              <p>2 huevos montados sobre panes aromatizados, prosciutto, salsa holandesa. *Acompañados de frijol volteado, platanos fritos, queso panela.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Huevos Poché <div class="price-separator"></div>40</span></h4>
+              <h3><span class="plate-title">Huevos Poché</span><span class="plate-price">40</span></h3>
             </div>
             <div class="plate-description">
-              <p>2 huevos poché, montados sobre pan aromatizado y jamón de pavo. *Acompañado de frijoles volteados,
-                queso panela, plátanos fritos, salsa ranchera.</p>
+              <p>2 huevos poché, montados sobre pan aromatizado y jamón de pavo. *Acompañado de frijoles volteados, queso panela, plátanos fritos, salsa ranchera.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Omelette Chapín <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Omelette Chapín</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Omelette relleno de frijoles, queso panela, aguacate. *Acompañado de platanos fritos, jamòn de pavo,
-                fruta.</p>
+              <p>Omelette relleno de frijoles, queso panela, aguacate. *Acompañado de platanos fritos, jamòn de pavo, fruta.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Omelette Al Gusto <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Omelette Al Gusto</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
-              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella,
-                tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.
-              </p>
+              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella, tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Panqueques <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Panqueques</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>Panqueques de fresa, syrup de chocolate, azúcar glass. *Vaso jugo de naranja.</p>
             </div>
           </div>
+
         </div>
       </div>
 
-      <div class="ensaladas food-type">
-        <div class="title-container">
-          <div class="expandable-separator"></div>
-          <h3>Ensaladas y Antipasto</h3>
-          <div class="expandable-separator"></div>
-        </div>
-
-        <div class="menu-content large-menu-content">
+      <!-- ENSALADAS Y ANTIPASTO -->
+      <div class="food-type" id="ensaladas">
+        <h2 class="section-menu-title"><span>Ensaladas y Antipasto</span></h2>
+        <div class="menu-content" id="ensaladas-menu-content">
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Aguacate Extra <div class="price-separator"></div>10</span></h4>
-            </div>
-            <div class="plate-description">
-              <p></p>
+              <h3><span class="plate-title">Aguacate Extra</span><span class="plate-price">10</span></h3>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Bruschetta <div class="price-separator"></div>35</span></h4>
+              <h3><span class="plate-title">Bruschetta</span><span class="plate-price">35</span></h3>
             </div>
             <div class="plate-description">
               <p>Rodajas de pan, tomate, albahaca, aceitunas, aceite de oliva.</p>
@@ -206,7 +265,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Carpaccio de Lomito <div class="price-separator"></div>70</span></h4>
+              <h3><span class="plate-title">Carpaccio de Lomito</span><span class="plate-price">70</span></h3>
             </div>
             <div class="plate-description">
               <p>Lomito, arúgula, alcaparras baby, puerro, queso parmesano.</p>
@@ -215,7 +274,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Ensalada Caprese <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Ensalada Caprese</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>Mozzarella fresca, tomate, albahaca, acetto balsamico.</p>
@@ -224,63 +283,60 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Ensalada de Arugula e Prosciutto <div class="price-separator"></div>
-                  65</span></h4>
+              <h3><span class="plate-title">Ensalada de Arugula e Prosciutto</span><span class="plate-price">65</span></h3>
             </div>
             <div class="plate-description">
-              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella,
-                tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.
-              </p>
+              <p>Huevos, puede elegir 3 de los siguentes ingredientes (champiñones, jamon de pavo, queso mozzarella, tomate, cebolla, tocino). *Acompañados de frijoles volteados, frutas, platanos fritos, salsa ranchera.</p>
             </div>
           </div>
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Funghi Al Aglio <div class="price-separator"></div>45</span></h4>
+              <h3><span class="plate-title">Funghi Al Aglio</span><span class="plate-price">45</span></h3>
             </div>
             <div class="plate-description">
               <p>Ragú de hongos, champiñones, portobello, crimini.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Melón y Prosciutto <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Melón y Prosciutto</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>Prosciutto crudo, melón, arúgula, reducción de balsámico..</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Pulpo Al Ajo <div class="price-separator"></div>55</span></h4>
+              <h3><span class="plate-title">Pulpo Al Ajo</span><span class="plate-price">55</span></h3>
             </div>
             <div class="plate-description">
               <p>Pulpos, camarones, cebolla morada, ajo.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Vitello Tonnato <div class="price-separator"></div>50</span></h4>
+              <h3><span class="plate-title">Vitello Tonnato</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>Lascas de lomo, arúgula, en salsa de atún.</p>
             </div>
           </div>
+
         </div>
       </div>
 
-      <div class="ensaladas food-type">
-        <div class="title-container">
-          <div class="expandable-separator"></div>
-          <h3>Pastas</h3>
-          <div class="expandable-separator"></div>
-        </div>
-
-        <div class="menu-content large-menu-content">
+      <!-- PASTAS -->
+      <div class="food-type" id="pastas">
+        <h2 class="section-menu-title"><span>Pastas</span></h2>
+        <div class="menu-content" id="pastas-menu-content">
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Fusilli Al Pesto <div class="price-separator"></div>60</span></h4>
+              <h3><span class="plate-title">Fusilli Al Pesto</span><span class="plate-price">60</span></h3>
             </div>
             <div class="plate-description">
               <p>Fusilli, pesto, parmesano.</p>
@@ -289,8 +345,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Penne Noci e Gorgonzola <div class="price-separator"></div>75</span>
-              </h4>
+              <h3><span class="plate-title">Penne Noci e Gorgonzola</span><span class="plate-price">75</span></h3>
             </div>
             <div class="plate-description">
               <p>Penne, gorgonzola, nuez de nogal, parmesano, crema.</p>
@@ -299,7 +354,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Ravioli Alla Vodka <div class="price-separator"></div>65</span></h4>
+              <h3><span class="plate-title">Ravioli Alla Vodka</span><span class="plate-price">65</span></h3>
             </div>
             <div class="plate-description">
               <p>Ravioles, parmesano, salsa tomate, crema natta.</p>
@@ -308,8 +363,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Spaghetti Aglio, Olio e Peperoncino <div class="price-separator"></div>
-                  50</span></h4>
+              <h3><span class="plate-title">Spaghetti Aglio, Olio e Peperoncino</span><span class="plate-price">50</span></h3>
             </div>
             <div class="plate-description">
               <p>Spaghetti, ajo, aceite de oliva, chile jalapeño</p>
@@ -318,7 +372,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Spaghetti Alla Carbonara <div class="price-separator"></div>55</span></h4>
+              <h3><span class="plate-title">Spaghetti Alla Carbonara</span><span class="plate-price">55</span></h3>
             </div>
             <div class="plate-description">
               <p>Spaghetti, parmesano, tocino, crema.</p>
@@ -327,51 +381,158 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Spaguetti Amatriciana <div class="price-separator"></div>60</span></h4>
+              <h3><span class="plate-title">Spaguetti Amatriciana</span><span class="plate-price">60</span></h3>
             </div>
             <div class="plate-description">
               <p>Spaghetti, tocino, salsa tomate, parmesano, picante.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Spaghetti Pulpo e Ajo <div class="price-separator"></div>75</span></h4>
+              <h3><span class="plate-title">Spaghetti Pulpo e Ajo</span><span class="plate-price">75</span></h3>
             </div>
             <div class="plate-description">
               <p>Spaghetti, pulpo, camarones, ajo, cebolla morada.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Tagliatelle Alfredo <div class="price-separator"></div>65</span></h4>
+              <h3><span class="plate-title">Tagliatelle Alfredo</span><span class="plate-price">65</span></h3>
             </div>
             <div class="plate-description">
               <p>Tagliatelle, salsa blanca, parmesano, camarones.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Tagliatelle Bolognesa <div class="price-separator"></div>65</span></h4>
+              <h3><span class="plate-title">Tagliatelle Bolognesa</span><span class="plate-price">65</span></h3>
             </div>
             <div class="plate-description">
               <p>Tagliatelle, salsa bolognesa, parmesano.</p>
             </div>
           </div>
+
         </div>
       </div>
 
-      <div class="ensaladas food-type">
-        <div class="title-container">
-          <div class="expandable-separator"></div>
-          <h3>Platos Fuertes</h3>
-          <div class="expandable-separator"></div>
-        </div>
-
-        <div class="menu-content large-menu-content">
+      <!-- PIZZAS -->
+      <div class="food-type" id="pizzas">
+        <h2 class="section-menu-title"><span>Pizzas</span></h2>
+        <div class="menu-content" id="pizzas-menu-content">
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Guarnición (con cada plato fuerte) </span></h4>
+              <h3><span class="plate-title">Pizza 4 Formaggi *Grande</span><span class="plate-price">110</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella fresca, mozzarella, parmesano, gorgonzola. *Mediana Q.80.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza 4 Stagioni *Grande</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, salsa de tomate, alcachofas, jamon, pepperoni, hongos. *Mediana Q.75.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Alfredo *Grande</span><span class="plate-price">100</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, pollo, salsa blanca, cebolla, champiñones, alcachofas. *Mediana Q.75.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Gorgonzola, Noci E Pera *Grande</span><span class="plate-price">100</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, salsa de tomate, gorgonzola, nuez de nogal, pera caramelizadas *Mediana Q.75.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Jamón *Grande</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, salsa de tomate, jamon. *Mediana Q.95.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Margarita *Grande</span><span class="plate-price">90</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella,salsa de tomate, albahaca, rodajas de tomate *Mediana Q.65.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Meat Lover *Grande</span><span class="plate-price">110</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Salsa boloñesa, mozzarella, pepperoni, tocino, jamon, chile pimiento. *Mediana Q.80.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Pepperoni *Grande</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarellla, salsa de tomate, pepperoni. *Mediana Q.70.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Prosciutto E Rucula *Grande</span><span class="plate-price">110</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, salsa de tomate, prosciutto, arúgula. *Mediana Q.80.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Prosciutto E Rucula *Grande</span><span class="plate-price">110</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, salsa de tomate, prosciutto, arúgula. *Mediana Q.80.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Pizza Tropical *Grande</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Mozzarella, salsa de tomate, jamon, piña. *Mediana Q. 70.00.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PLATOS FUERTES -->
+      <div class="food-type" id="carnes">
+        <h2 class="section-menu-title"><span>Platos Fuertes</span></h2>
+        <div class="menu-content" id="carnes-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Guarnición (con cada plato fuerte)</span></h3>
             </div>
             <div class="plate-description">
               <p>Vegetales al vapor, ensalada mixta, papas al romero, y vegetales salteados.</p>
@@ -380,8 +541,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Camarones Al Ajillo <div class="price-separator"></div>140</span>
-              </h4>
+              <h3><span class="plate-title">Camarones Al Ajillo</span><span class="plate-price">140</span></h3>
             </div>
             <div class="plate-description">
               <p>Camarones jumbo en salsa al ajillo (incluye dos guarniciones)</p>
@@ -390,7 +550,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Lomito Al Funghi <div class="price-separator"></div>120</span></h4>
+              <h3><span class="plate-title">Lomito Al Funghi</span><span class="plate-price">120</span></h3>
             </div>
             <div class="plate-description">
               <p>lomito en salsa de hongos.</p>
@@ -399,7 +559,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Pollo Alla Cacciatora <div class="price-separator"></div>75</span></h4>
+              <h3><span class="plate-title">Pollo Alla Cacciatora</span><span class="plate-price">75</span></h3>
             </div>
             <div class="plate-description">
               <p>Pollo, salsa de tomate, aceitunas, chile escalfado.</p>
@@ -408,7 +568,7 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Puyazo <div class="price-separator"></div>120</span></h4>
+              <h3><span class="plate-title">Puyazo</span><span class="plate-price">120</span></h3>
             </div>
             <div class="plate-description">
               <p>Puyazo, acompañado de guacamol, chirmol, cebollines, frijol, papas al romero,.</p>
@@ -417,763 +577,514 @@
 
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Salmon A La Plancha <div class="price-separator"></div>120</span></h4>
+              <h3><span class="plate-title">Salmon A La Plancha</span><span class="plate-price">120</span></h3>
             </div>
             <div class="plate-description">
               <p>Salmón en salsa a su elección: ajillo, fiorentina, all arancia.</p>
             </div>
           </div>
+
           <div class="menu-item">
             <div class="plate">
-              <h4><span class="plate-title">Saltimboca Alla Romana <div class="price-separator"></div>80</span></h4>
+              <h3><span class="plate-title">Saltimboca Alla Romana</span><span class="plate-price">80</span></h3>
             </div>
             <div class="plate-description">
               <p>Solomillo, prosciutto crudo, salvia, mozzarella.</p>
             </div>
           </div>
+
         </div>
       </div>
 
-      <div class="ensaladas food-type">
-        <div class="title-container">
-          <div class="expandable-separator"></div>
-          <h3>Pizza</h3>
-          <div class="expandable-separator"></div>
-        </div>
+      <!-- POSTRES -->
+      <div class="food-type" id="postres">
+        <h2 class="section-menu-title"><span>Postres</span></h2>
+        <div class="menu-content" id="postres-menu-content">
 
-          <div class="menu-content large-menu-content">
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza 4 Formaggi *Grande <div class="price-separator"></div>110</span>
-                </h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella fresca, mozzarella, parmesano, gorgonzola. *Mediana Q.80.00</p>
-              </div>
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Cassata Siciliana</span><span class="plate-price">30.00</span></h3>
             </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza 4 Stagioni *Grande <div class="price-separator"></div>95</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, salsa de tomate, alcachofas, jamon, pepperoni, hongos. *Mediana Q.75.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Alfredo *Grande <div class="price-separator"></div>100</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, pollo, salsa blanca, cebolla, champiñones, alcachofas. *Mediana Q.75.00</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Gorgonzola, Noci E Pera *Grande <div class="price-separator"></div>
-                    100</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, salsa de tomate, gorgonzola, nuez de nogal, pera caramelizadas *Mediana Q.75.00</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Jamón *Grande <div class="price-separator"></div>95</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, salsa de tomate, jamon. *Mediana Q.95.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Margarita *Grande <div class="price-separator"></div>90</span>
-                </h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella,salsa de tomate, albahaca, rodajas de tomate *Mediana Q.65.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Meat Lover *Grande <div class="price-separator"></div>110</span>
-                </h4>
-              </div>
-              <div class="plate-description">
-                <p>Salsa boloñesa, mozzarella, pepperoni, tocino, jamon, chile pimiento. *Mediana Q.80.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Pepperoni *Grande <div class="price-separator"></div>95</span>
-                </h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarellla, salsa de tomate, pepperoni. *Mediana Q.70.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Prosciutto E Rucula *Grande <div class="price-separator"></div>
-                    110</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, salsa de tomate, prosciutto, arúgula. *Mediana Q.80.00</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Prosciutto E Rucula *Grande <div class="price-separator"></div>
-                    110</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, salsa de tomate, prosciutto, arúgula. *Mediana Q.80.00</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Pizza Tropical *Grande <div class="price-separator"></div>95</span>
-                </h4>
-              </div>
-              <div class="plate-description">
-                <p>Mozzarella, salsa de tomate, jamon, piña. *Mediana Q. 70.00.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ensaladas food-type">
-          <div class="title-container">
-            <div class="expandable-separator"></div>
-            <h3>Bebidas Frías</h3>
-            <div class="expandable-separator"></div>
-          </div>
-
-          <div class="menu-content large-menu-content">
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Agua Mineral <div class="price-separator"></div>12</span></h4>
-              </div>
-              <div class="plate-description">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Agua Pura Embotellada <div class="price-separator"></div>10</span></h4>
-              </div>
-              <div class="plate-description">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Gaseosas en Lata <div class="price-separator"></div>12</span></h4>
-              </div>
-              <div class="plate-description">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Jamaica <div class="price-separator"></div>15</span></h4>
-              </div>
-              <div class="plate-description">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Licuados De Fruta (Leche) <div class="price-separator"></div>18</span>
-                </h4>
-              </div>
-              <div class="plate-description">
-                <p>Con agua Q. 15.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Limonada (Soda) <div class="price-separator"></div>18</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Con agua Q.15.00.</p>
-              </div>
-            </div>
-
-            <div class="menu-item">
-              <div class="plate">
-                <h4><span class="plate-title">Naranjada (Soda) <div class="price-separator"></div>18</span></h4>
-              </div>
-              <div class="plate-description">
-                <p>Con agua Q.15.00</p>
-              </div>
-            </div>
-          </div>
-          </div>
-
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Bebidas Calientes</h3>
-              <div class="expandable-separator"></div>
-            </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Café Americano <div class="price-separator"></div>12</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Café Cortado <div class="price-separator"></div>15</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Café Expresso <div class="price-separator"></div>14</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Capuccino <div class="price-separator"></div>18</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Mocaccino <div class="price-separator"></div>20</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Té (Bigelow Variedad) <div class="price-separator"></div>15</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-</div>
+            <div class="plate-description">
+              <p>Pastel de helados, frutas cristalizadas.</p>
             </div>
           </div>
 
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Cerveza</h3>
-              <div class="expandable-separator"></div>
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Panna Cotta</span><span class="plate-price">30.00</span></h3>
             </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Dorada Draft <div class="price-separator"></div>22</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Gallo (Normal/Light) <div class="price-separator"></div>27</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Michelada <div class="price-separator"></div>35</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Modelo (Clara/Obscura) <div class="price-separator"></div>25</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Montecarlo <div class="price-separator"></div>27</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Stella Artois <div class="price-separator"></div>27</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
+            <div class="plate-description">
+              <p>Receta de la casa.</p>
             </div>
           </div>
 
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Cocktails</h3>
-              <div class="expandable-separator"></div>
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Tiramisú Trevigiano</span><span class="plate-price">35.00</span></h3>
             </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Cuba Libre <div class="price-separator"></div>30</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Gin Tonic <div class="price-separator"></div>35</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Margarita <div class="price-separator"></div>30</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Mojito <div class="price-separator"></div>30</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Sangría <div class="price-separator"></div>35</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Spritz Aperol <div class="price-separator"></div>40</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Tom Collins <div class="price-separator"></div>35</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
+            <div class="plate-description">
+              <p>Receta de la casa.</p>
             </div>
           </div>
-
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Licores</h3>
-              <div class="expandable-separator"></div>
-            </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Jw Etiqueta Negra <div class="price-separator"></div>50</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.80.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Jw Etiqueta Roja <div class="price-separator"></div>30</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.50.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Ron Botrán 15 Años <div class="price-separator"></div>40</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.60.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Ron Botrán 12 Años <div class="price-separator"></div>30</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q 40.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Ron Zacapa 23 Años <div class="price-separator"></div>50</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.80.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Tequila José Cuervo Reposado <div class="price-separator"></div>25</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.40.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Tequila José Cuervo Silver <div class="price-separator"></div>25</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.40.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Vodka Absolut <div class="price-separator"></div>35</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.50.00</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Vodka Stolichnaya <div class="price-separator"></div>30</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Doble Q.45.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Vinos</h3>
-              <div class="expandable-separator"></div>
-            </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">19 CRIMES.CABERNET SAUVIGNON <div class="price-separator"></div>45</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">BG ROSE D ANJOU A.C. PASSEPORT ROSADO <div class="price-separator"></div>220</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Botella</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">CARMELO RODERO <div class="price-separator"></div>50</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">DUBOIS G.C. SEMI SECO BLANCO <div class="price-separator"></div>200</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Botella</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">FAUSTINO CRIANZA <div class="price-separator"></div>45</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">FAUSTINO V VIURA CHARDONNAY <div class="price-separator"></div>40</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">FREIXENET CORDON NEGRO BRUT <div class="price-separator"></div>280</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Botella</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">LORIÑÓN CRIANZA <div class="price-separator"></div>95</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">PABLO NERUDA SAUVIGNON BLANC <div class="price-separator"></div>40</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">SANGRE DE TORO <div class="price-separator"></div>40</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">TRAPICHE CHARDONNAY BLANCO <div class="price-separator"></div>35</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Copa</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Aperitivos</h3>
-              <div class="expandable-separator"></div>
-            </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Amaretto <div class="price-separator"></div>25</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Aperol <div class="price-separator"></div>25</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Baileys <div class="price-separator"></div>25</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Kahlúa <div class="price-separator"></div>30</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Limoncello <div class="price-separator"></div>25</span></h4></div>
-                <div class="plate-description">
-                  <p></p>
-                </div>
-              </div>
-</div>
-</div>
-
-          <div class="ensaladas food-type">
-            <div class="title-container">
-              <div class="expandable-separator"></div>
-              <h3>Postres</h3>
-              <div class="expandable-separator"></div>
-            </div>
-
-            <div class="menu-content large-menu-content">
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Cassata Siciliana <div class="price-separator"></div>30.00</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Pastel de helados, frutas cristalizadas.</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Panna Cotta <div class="price-separator"></div>30.00</span>
-                  </h4>
-                </div>
-                <div class="plate-description">
-                  <p>Receta de la casa.</p>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="plate">
-                  <h4><span class="plate-title">Tiramisú Trevigiano <div class="price-separator"></div>35.00</span></h4>
-                </div>
-                <div class="plate-description">
-                  <p>Receta de la casa.</p>
-                </div>
-              </div>
-            </div>
-            <p class="additional">Para detalles adicionales, pregunte a nuestros meseros. Ellos estarán gustosos de ayudarle.</p>
-          </div>
-
 
         </div>
+      </div>
+
+      <!-- BEBIDAS HEADING -->
+      <div class="bebidas-divider">
+        <span>Bebidas</span>
+      </div>
+
+      <!-- CAFÉ Y BEBIDAS CALIENTES -->
+      <div class="food-type" id="cafe">
+        <h2 class="section-menu-title"><span>Café y Bebidas Calientes</span></h2>
+        <div class="menu-content menu-content-narrow" id="cafe-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Café Americano</span><span class="plate-price">12</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Café Cortado</span><span class="plate-price">15</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Café Expresso</span><span class="plate-price">14</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Capuccino</span><span class="plate-price">18</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Mocaccino</span><span class="plate-price">20</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Té (Bigelow Variedad)</span><span class="plate-price">15</span></h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BEBIDAS FRÍAS -->
+      <div class="food-type" id="bebidas-frias">
+        <h2 class="section-menu-title"><span>Bebidas Frías</span></h2>
+        <div class="menu-content menu-content-narrow" id="bebidas-frias-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Agua Mineral</span><span class="plate-price">12</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Agua Pura Embotellada</span><span class="plate-price">10</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Gaseosas en Lata</span><span class="plate-price">12</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Jamaica</span><span class="plate-price">15</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Licuados De Fruta (Leche)</span><span class="plate-price">18</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Con agua Q. 15.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Limonada (Soda)</span><span class="plate-price">18</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Con agua Q.15.00.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Naranjada (Soda)</span><span class="plate-price">18</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Con agua Q.15.00</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CÓCTELES -->
+      <div class="food-type" id="cocteles">
+        <h2 class="section-menu-title"><span>Cócteles</span></h2>
+        <div class="menu-content" id="cocteles-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Cuba Libre</span><span class="plate-price">30</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Gin Tonic</span><span class="plate-price">35</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Margarita</span><span class="plate-price">30</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Mojito</span><span class="plate-price">30</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Sangría</span><span class="plate-price">35</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Spritz Aperol</span><span class="plate-price">40</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Tom Collins</span><span class="plate-price">35</span></h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CERVEZAS -->
+      <div class="food-type" id="cervezas">
+        <h2 class="section-menu-title"><span>Cervezas</span></h2>
+        <div class="menu-content menu-content-narrow" id="cervezas-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Dorada Draft</span><span class="plate-price">22</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Gallo (Normal/Light)</span><span class="plate-price">27</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Michelada</span><span class="plate-price">35</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Modelo (Clara/Obscura)</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Montecarlo</span><span class="plate-price">27</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Stella Artois</span><span class="plate-price">27</span></h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VINOS -->
+      <div class="food-type" id="vinos">
+        <h2 class="section-menu-title"><span>Vinos</span></h2>
+        <div class="menu-content" id="vinos-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">19 CRIMES.CABERNET SAUVIGNON</span><span class="plate-price">45</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">BG ROSE D ANJOU A.C. PASSEPORT ROSADO</span><span class="plate-price">220</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Botella</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">CARMELO RODERO</span><span class="plate-price">50</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">DUBOIS G.C. SEMI SECO BLANCO</span><span class="plate-price">200</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Botella</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">FAUSTINO CRIANZA</span><span class="plate-price">45</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">FAUSTINO V VIURA CHARDONNAY</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">FREIXENET CORDON NEGRO BRUT</span><span class="plate-price">280</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Botella</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">LORIÑÓN CRIANZA</span><span class="plate-price">95</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">PABLO NERUDA SAUVIGNON BLANC</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">SANGRE DE TORO</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">TRAPICHE CHARDONNAY BLANCO</span><span class="plate-price">35</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Copa</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- APERITIVOS Y DIGESTIVOS -->
+      <div class="food-type" id="aperitivos">
+        <h2 class="section-menu-title"><span>Aperitivos y Digestivos</span></h2>
+        <div class="menu-content menu-content-narrow" id="aperitivos-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Amaretto</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Aperol</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Baileys</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Kahlúa</span><span class="plate-price">30</span></h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Limoncello</span><span class="plate-price">25</span></h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- LICORES -->
+      <div class="food-type" id="licores">
+        <h2 class="section-menu-title"><span>Licores</span></h2>
+        <div class="menu-content menu-content-narrow" id="licores-menu-content">
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Jw Etiqueta Negra</span><span class="plate-price">50</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.80.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Jw Etiqueta Roja</span><span class="plate-price">30</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.50.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Ron Botrán 15 Años</span><span class="plate-price">40</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.60.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Ron Botrán 12 Años</span><span class="plate-price">30</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q 40.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Ron Zacapa 23 Años</span><span class="plate-price">50</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.80.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Tequila José Cuervo Reposado</span><span class="plate-price">25</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.40.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Tequila José Cuervo Silver</span><span class="plate-price">25</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.40.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Vodka Absolut</span><span class="plate-price">35</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.50.00</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="plate">
+              <h3><span class="plate-title">Vodka Stolichnaya</span><span class="plate-price">30</span></h3>
+            </div>
+            <div class="plate-description">
+              <p>Doble Q.45.00</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
   </main>
+
   <footer class="footer-bar">
-    <div class="footer-logo"><a href="index.html"><img class="footer-image" src="images/grupo-montecasino-cream.png"
-          alt="Logo Montecasino"></a>
+    <div class="footer-logo"><img class="footer-image" src="images/grupo-montecasino-cream.png" alt="Logo Montecasino" loading="lazy" width="3157" height="1080">
     </div>
     <div class="footer-text">
-      <a href="tel:+502-4614-9855" class="phone-number"><i class="fas fa-phone"></i> +(502) 4614-9855</a>
-      <a href="#"><i class="fas fa-map-marker"></i> Km. 34 Carretera de Antigua a Ciudad de Guatemala, Santa Lucía
-        Milpas
+      <a href="tel:+502-4614-9855" class="phone-number"><i class="fas fa-phone" aria-hidden="true"></i> +(502) 4614-9855</a>
+      <a href="contacto.html#mapa"><i class="fas fa-map-marker" aria-hidden="true"></i> Km. 34 Carretera de Antigua a Ciudad Guatemala, Santa Lucía Milpas
         Altas</a>
       <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
-  <!--JavaScript file-->
+
   <script src="main.js"></script>
 </body>
 

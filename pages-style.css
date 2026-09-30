@@ -1,0 +1,433 @@
+/* Shared styles for contacto.html and reservaciones.html */
+
+/* ── Page Hero ── */
+
+.page-hero {
+  height: 55vh;
+  background-image: url('images/fotografia/restaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservaciones-hero {
+  background-image: url('images/fotografia/DSC_0128 copia.jpg');
+}
+
+.hostal-hero {
+  height: 70vh;
+  background-image: url('images/fotografia/DSC_0110 copia.jpg');
+  background-position: center 30%;
+}
+
+.catering-hero {
+  height: 70vh;
+  background-image: url('images/fotografia/jardin.jpg');
+  background-position: center 40%;
+}
+
+/* ── Coming Soon ── */
+
+.pronto-badge {
+  display: inline-block;
+  border: 2px solid rgba(239, 235, 218, 0.55);
+  padding: 7px 22px;
+  font-family: ArticulatCF, sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(239, 235, 218, 0.8);
+  margin-bottom: 22px;
+}
+
+.coming-soon-section {
+  background-color: #efebda;
+  padding: 90px 60px;
+  font-family: ArticulatCF, sans-serif;
+}
+
+.coming-soon-intro {
+  max-width: 680px;
+  margin: 0 auto 80px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.75;
+  color: #323337;
+  opacity: 0.8;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.feature-item i {
+  font-size: 42px;
+  color: rgba(50, 51, 55, 0.7);
+  margin-bottom: 22px;
+  display: block;
+}
+
+.feature-item h3 {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #323337;
+  margin-bottom: 14px;
+}
+
+.feature-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(50, 51, 55, 0.78);
+}
+
+.coming-soon-cta {
+  text-align: center;
+  padding-top: 50px;
+  border-top: 2px solid rgba(50, 51, 55, 0.12);
+}
+
+.coming-soon-cta p {
+  font-size: 22px;
+  color: #323337;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+
+.coming-soon-cta-btn {
+  display: inline-block;
+  padding: 16px 50px;
+  border: 3px solid #323337;
+  color: #323337;
+  font-family: ArticulatCF, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.coming-soon-cta-btn:hover {
+  background-color: #323337;
+  color: #efebda;
+}
+
+/* ── Coming Soon Responsive ── */
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .coming-soon-section {
+    padding: 60px 28px;
+  }
+
+  .coming-soon-intro {
+    font-size: 17px;
+  }
+}
+
+.page-hero-overlay {
+  background-color: rgba(50, 51, 55, 0.75);
+  padding: 50px 80px;
+  text-align: center;
+  color: #efebda;
+  font-family: ArticulatCF, sans-serif;
+}
+
+.page-title {
+  font-size: 55px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.page-separator {
+  border: none;
+  border-top: 3px solid #efebda;
+  max-width: 100px;
+  margin: 20px auto;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* ── Headings ── */
+
+.contacto-heading {
+  font-family: ArticulatCF, sans-serif;
+  font-size: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #323337;
+}
+
+.block-separator-dark {
+  border: none;
+  border-top: 3px solid #323337;
+  max-width: 70px;
+  margin: 0 0 36px;
+}
+
+/* ── Contacto Layout ── */
+
+.contacto-section {
+  background-color: #efebda;
+  padding: 80px 60px;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Contacto Info ── */
+
+.info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  font-family: ArticulatCF, sans-serif;
+  color: #323337;
+}
+
+.info-icon {
+  font-size: 22px;
+  margin-top: 4px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+.info-item h4 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.info-item p,
+.info-item a {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #323337;
+}
+
+.social-contacto {
+  margin-top: 40px;
+  font-family: ArticulatCF, sans-serif;
+  color: #323337;
+}
+
+.social-contacto h4 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 28px;
+}
+
+.social-icons a {
+  color: #323337;
+  opacity: 0.75;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+/* ── Form Shared ── */
+
+.contacto-form-wrapper {
+  font-family: ArticulatCF, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: ArticulatCF, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #323337;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: ArticulatCF, sans-serif;
+  font-size: 15px;
+  color: #323337;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(50, 51, 55, 0.3);
+  padding: 10px 2px;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-bottom-color: #323337;
+}
+
+.form-group textarea {
+  resize: vertical;
+  border: 2px solid rgba(50, 51, 55, 0.3);
+  padding: 12px;
+  margin-top: 4px;
+}
+
+.form-group textarea:focus {
+  border-color: #323337;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  opacity: 0.4;
+}
+
+.form-btn {
+  font-family: ArticulatCF, sans-serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #323337;
+  color: #efebda;
+  border: 3px solid #323337;
+  padding: 16px 40px;
+  cursor: pointer;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.form-btn:hover {
+  background-color: transparent;
+  color: #323337;
+}
+
+/* ── Map ── */
+
+.mapa-section {
+  line-height: 0;
+}
+
+.mapa-section iframe {
+  display: block;
+  width: 100%;
+}
+
+/* ── Reservaciones ── */
+
+.reservaciones-section {
+  background-color: #efebda;
+  padding: 80px 60px;
+}
+
+.reservaciones-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.reservaciones-intro {
+  font-family: ArticulatCF, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #323337;
+  opacity: 0.8;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.reservaciones-intro a {
+  color: #323337;
+  text-decoration: underline;
+}
+
+.reservaciones-form {
+  font-family: ArticulatCF, sans-serif;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-note {
+  font-family: ArticulatCF, sans-serif;
+  font-size: 13px;
+  opacity: 0.55;
+  margin-top: 16px;
+  color: #323337;
+  letter-spacing: 0.5px;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 900px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contacto-section,
+  .reservaciones-section {
+    padding: 50px 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 36px;
+  }
+
+  .page-hero-overlay {
+    padding: 36px 24px;
+  }
+
+  .contacto-heading {
+    font-size: 24px;
+  }
+}

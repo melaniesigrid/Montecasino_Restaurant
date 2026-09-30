@@ -1,0 +1,42 @@
+node_modules/
+.expo/
+dist/
+ios/build/
+android/build/
+android/app/build/
+
+# Environment — never commit keys
+.env
+.env.local
+.env*.local
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.log
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Orchestrator results (generated output, not source)
+src/files/results/
+.gstack/
+active/
+
+# Multi-agent browser run artifacts
+multi-chrome-agent-workspace/*.log
+multi-chrome-agent-workspace/chrome-agent-*/snapshot*.txt
+multi-chrome-agent-workspace/chrome-agent-*/*.txt
+
+# Sentry auth tokens — contain secrets, never commit
+android/sentry.properties
+ios/sentry.properties
+
+# Claude Code local settings — personal IDE config
+.claude/
+
+.compound-engineering/*.local.yaml
